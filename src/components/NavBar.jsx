@@ -4,9 +4,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../assets/Logo.png'
 
 const NavBar = () => {
   return (
+
+    <>
+    
+    <img style={{margin:'auto', display:'flex', width:'6.125rem', marginTop:'2.125rem'}} src={logo} alt="logo" />
     
     <Navbar className="position-absolute top-0 end-0 NavBar"  expand="lg">
       <Container className="NavBarContainer">
@@ -33,6 +38,8 @@ const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+    </>
   );
 }
 
