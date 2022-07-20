@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import products from '../data/products';
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+import Spinner from 'react-bootstrap/Spinner';
+
+import Items from './Items';
 
 
 
@@ -9,6 +11,8 @@ const ProductsListContainer = () => {
     const [items, setItems] = useState([]);
 
     const [loading, setLoading] = useState(true);
+
+    const {CategoryId} = useParams();
   
      
     useEffect(() => {
@@ -16,10 +20,12 @@ const ProductsListContainer = () => {
   
       const getItems = new Promise((resolve) => {
         setTimeout(() => {
-          const dataId = products;
+          const dataId = CategoryId ?
+           products.filter((item) => item.category === CategoryId)
+           : products;
   
           resolve(dataId);
-        }, 1000);
+        }, 2000);
       });
   
       getItems
@@ -27,15 +33,23 @@ const ProductsListContainer = () => {
           setItems(res);
         })
         .finally(() => setLoading(false));
-    }, [products]);
+    }, [CategoryId]);
   console.log(items) 
 
 
     return loading ? (
-      <h3>cargando...</h3>
-    ) : (
+      <>
+{/*        <h3 style={{marginLeft:'40%', marginTop:'120px'}}>cargando...</h3>
+ */}      <Spinner style={{margin:'50%', marginTop:'200px'}} animation="border" variant="primary" />
+      </>
      
-        <div  style={{display:'flex', flexWrap: 'wrap', margin: '120px 45px'} }>
+    ) : (
+
+      <div style={{backgroundColor:"grey"}}>
+        <Items items={items}/>
+      </div>
+     
+        /* <div  style={{display:'flex', flexWrap: 'wrap', margin: '120px 45px'} }>
         { items.map( items =>
         
         <div key={items.id}>
@@ -74,7 +88,7 @@ const ProductsListContainer = () => {
         
         </div>
 
-
+ */
 
 
     );
