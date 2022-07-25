@@ -45,7 +45,7 @@ const ProductsListContainer = () => {
      
     ) : (
 
-      <div style={{backgroundColor:"grey"}}>
+      <div >
         <Items items={items}/>
       </div>
      

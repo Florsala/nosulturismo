@@ -7,7 +7,10 @@ import Footer from './components/Footer';
 import ProductsListContainer from './components/ProductsListContainer';
 import SideBar from './components/SideBar';
 import Home from './components/Home';
-
+import ProductsDestination from './components/ProductsDestination';
+import ProductDetailContainer from './components/ProductDetailContainer';
+import Contacto from './components/Contacto';
+import { BackToTopButton } from './components/BackToTopButton';
 
 
 function App() {
@@ -21,9 +24,15 @@ function App() {
      {/* <Route path="about" element={<Nosotros />} />  */}
        <Route path="/category/:CategoryId" element={<ProductsListContainer />}/>
       <Route path="/tours" element={<ProductsListContainer />}/>
+      <Route path="/tours/:id" element={<ProductDetailContainer />}/>
+      <Route path="/destino/:Destination" element={<ProductsDestination/>}/>
+      <Route path="/contacto" element={<Contacto />}/>
+
+
 
             
     </Routes>
+    <BackToTopButton/>
     <Footer/>
   </div>
 

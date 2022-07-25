@@ -9,12 +9,17 @@ const categories = [
     { id: 2, 
       name: "Trekking", 
       img:"/img/trekk.jpg",
-      address: "/category/Terrestres" },
+      address: "/category/Trekking" },
 
       { id: 3, 
         name: "Aventura", 
         img:"/img/esmeralda.jpg",
-        address: "/category/Ushuaia" },
+        address: "/category/Aventura" },
+
+        { id: 4, 
+          name: "Traslados", 
+          img:"/img/traslado.jpg",
+          address: "/category/Traslados" },
   ];
   
   

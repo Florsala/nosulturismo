@@ -6,17 +6,19 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../assets/Logo.png";
 
+import destination from "../data/destination";
+
 const NavBar = () => {
   return (
-    <>
-      <Navbar
-        className="position-absolute top-0 end-0 NavBar"
-        variant="dark"
-        expand="lg"
-      >
-        <Link to={"/"}>
+    <> <Link to={"/"}>
           <img className="logo" src={logo} alt="logo" />
         </Link>
+      <Navbar
+        className="position-absolute top-0 end-0 NavBar"
+        variant="light"
+        expand="lg"
+      >
+       
         <Container className="NavBarContainer">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -24,9 +26,10 @@ const NavBar = () => {
               <Nav.Link>
                 <Link
                   style={{
-                    color: "#FFFFFF",
+                    color: "#1A4EA0",
                     fontWeight: "600",
                     textDecoration: "none",
+                    textShadow: "1px 1px #fffe"
                   }}
                   to={"/"}
                 >
@@ -34,37 +37,54 @@ const NavBar = () => {
                 </Link>
               </Nav.Link>
 
+             
               <NavDropdown
-                style={{ color: "#FFFFFF", fontWeight: "600" }}
+                style={{ color: "#1A4EA0", textShadow: "1px 1px #fffe", fontWeight: "600" }}
                 title="TOURS"
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item to="#action/3.1">
-                  EL CALAFATE
-                </NavDropdown.Item>
-                <NavDropdown.Item to="#action/3.2">EL CHALTÉN</NavDropdown.Item>
-                <NavDropdown.Item to="#action/3.3">USHUAIA</NavDropdown.Item>
-                <NavDropdown.Item to="#action/3.3">CHILE</NavDropdown.Item>
+                
+                {destination.map((i) => {
+                  return (
+                    <NavDropdown.Item key={i.id}>
+                      <Link to={i.address}>
+                        {i.name}
+                      </Link>
+                    </NavDropdown.Item>
+                  );
+                })}
+             
+             
                 <NavDropdown.Item>
-                  <Link to={"/tours"}  style={{
-                    color: "#1A4EA0",
-                    fontWeight: "600",
-                    textDecoration: "none",
-                  }}>VER TODO</Link>
+                  <Link
+                    to={"/tours"}
+                    style={{
+                      color: "#1A4EA0",
+                      fontWeight: "600",
+                      textDecoration: "none",
+                    }}
+                  >
+                    VER TODO
+                  </Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link
-                style={{ color: "#FFFFFF", fontWeight: "600" }}
+                style={{ color: "#1A4EA0", fontWeight: "600", textShadow: "1px 1px #fffe" }}
                 to="#link"
               >
                 NOSOTROS
               </Nav.Link>
               <Nav.Link
-                style={{ color: "#FFFFFF", fontWeight: "600" }}
-                to="#link"
+                style={{ color: "#1A4EA0", fontWeight: "600", textShadow: "1px 1px #fffe",   }}
+                
               >
+                <Link style={{textDecoration: "none", color: "#1A4EA0",
+                    fontWeight: "600",
+                    textShadow: "1px 1px #fffe"}} to={"/contacto"}>
                 CONTACTO
-              </Nav.Link>
+                </Link>
+                
+              </Nav.Link> 
             </Nav>
           </Navbar.Collapse>
         </Container>

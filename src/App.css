@@ -12,15 +12,12 @@ body {
 }
 
 .logo {
-  
-
   display: flex;
-  /* left: 50%; */
   z-index: 2;
   width: 6.125rem;
-  /* margin-top: 2.125rem; */
-  /* position: absolute; */
-  margin-right: 100px;
+  position: absolute;
+  margin-left: 48%;
+  top: 1.5625rem;
 }
 
 .NavBarContainer {
@@ -28,25 +25,32 @@ body {
 }
 
 .NavBar {
-  padding-right: 70px;
-  margin-top: 50px;
+  padding-right: 4.375rem;
+  margin-top: 3.125rem;
   z-index: 2;
 }
 
-.navbar-nav{
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 17px;
-  font-family: 'Montserrat';
+.a.nav-link {
+  font-weight: bolder;
+}
+.navbar-nav {
+  font-size: 1.125rem;
+  font-weight: bolder;
+  line-height: 1.0625rem;
+  font-family: "Montserrat";
   color: #ffff;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.0313rem;
 }
 
-#basic-nav-dropdown{
-  color: #ffff;
-
+#basic-nav-dropdown {
+  color: #1a4ea0;
 }
 
+.carouselImg {
+  height: 100vh;
+  object-fit: cover;
+  object-position: 0rem -5.25rem;
+}
 .HomeHeader {
   position: absolute;
   width: 100vw;
@@ -55,67 +59,120 @@ body {
   top: 0;
 }
 
-/* .headerImage::before{
-  background-image: url('../assets/zorro2.jpg');
-} */
-
 .header {
-  margin-left: 65px;
-  width: 400px;
-  margin-bottom: 100px;
+  margin-left: 4.0625rem;
+  width: 25rem;
+  margin-bottom: 6.25rem;
   color: #ffffff;
-  padding: 25px;
+  padding: 1.5625rem;
   font-family: "Montserrat", sans-serif;
   position: absolute;
   transform: translate(23%, -40%);
   z-index: 2;
-  top: 20%;
+  top: 30%;
 }
 
 .yellowBorder {
-  margin-top: -40px;
+  margin-top: -2.5rem;
   position: absolute;
-  width: 157px;
-  height: 0px;
-  left: 30px;
-  top: 219px;
+  width: 9.8125rem;
+  height: 0rem;
+  left: 1.875rem;
+  top: 13.6875rem;
 
-  border: 6px solid #f8de15;
+  border: 0.375rem solid #f8de15;
 }
 .header_title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  margin-top: 11.25rem;
-  text-shadow: 0 0 25px black;
+  margin-top: 12.25rem;
+  text-shadow: 0 0 1.5625rem black;
+  width: 750px;
+  margin-bottom: 1.5625rem;
 }
 
 .header_text {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 1.75rem;
+  line-height: 1.5625rem;
   letter-spacing: 0.03em;
-  text-shadow: 0 0 25px black;
+  text-shadow: 0 0 1.5625rem black;
+  margin-bottom: 2.1875rem;
 }
 
 .secondHeader {
-  margin-left: 60%;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   display: inline-block;
   color: #1a4ea0;
+  right: 4.5625rem;
+  position: absolute;
+  width: 31.25rem;
+}
+
+.secondHeader_text {
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.03em;
+  /* text-shadow: 0 0 25px black; */
+  margin-bottom: 2.1875rem;
 }
 
 .secondHeader_title {
   font-size: 4rem;
   font-weight: 700;
+  margin-top: 1.3125rem;
+  text-shadow: 0 0 2px black;
+}
+
+.seconHeader_yellowBorder {
+  position: absolute;
+  width: 9.8125rem;
+  height: 0px;
+
+  border: 0.375rem solid #f8de15;
+}
+
+.thirdHeader {
+  width: 62.5rem;
+  margin-bottom: 6.25rem;
+  color: #ffffff;
+  padding: 1.5625rem;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  z-index: 2;
+  left: 15%;
+  margin-top: 1.5625rem;
+}
+.thirdHeader_yellowBorder {
+  position: absolute;
+  width: 9.8125rem;
+  height: 0px;
+  border: 6px solid #f8de15;
+}
+
+.thirdHeader_title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 2.25rem;
+  text-shadow: 0 0 25px black;
+}
+
+.thirdHeader_text {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2.1875rem;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 29px black;
 }
 
 .categoryImg {
-  width: 224px;
-  height: 299px;
+  width: 14rem;
+  height: 18.6875rem;
   object-fit: cover;
   object-position: left;
-  border-radius: 22px;
-  margin: 20px;
+  border-radius: 1.375rem;
+  margin: 1.25rem;
   filter: brightness(0.8);
 }
 
@@ -123,51 +180,95 @@ body {
   position: absolute;
   /* transform: translate(40px, -70px); */
   color: #ffff;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: bold;
   text-transform: uppercase;
   /* text-decoration: none; */
   text-align: center;
 }
+.card-img-overlay {
+  border-radius: 1.375rem !important;
+  box-shadow: 4px 1px 4px 2px rgb(0 0 0 / 25%);
+}
 
-.footer {
-  width: 100%;
-  height: 14.8rem;
+/* CONTACTO */
+
+.rectangle-b {
+  position: absolute;
+  width: 21.875rem;
+  height: 32.3125rem;
+  top: 8.75rem;
+  background: #1a4ea0;
+  z-index: 1;
+  right: 11rem;
+}
+
+.YellowLine {
+  width: 12.5rem;
+
+  margin-top: 3.125rem;
+  margin: 2.5rem auto;
+
+  border: 4px solid #f8de15;
+}
+
+.rectangle-o {
+  position: absolute;
+  width: 12.5rem;
+  height: 36.8125rem;
+  right: 8rem;
+  top: 7.1875rem;
+
+  background: #f49658;
+}
+
+.contactHeader {
+  color: #1a4ea0;
+  width: 31.25rem;
+  margin-left: 6.25rem;
+  padding: 1.5625rem;
+}
+
+.contactYellowBorder {
+  width: 9.8125rem;
+
+  border: 4px solid #f8de15;
+  margin-left: 7.75rem;
+}
+
+.main-footer {
   background: rgba(0, 0, 0, 0.88);
-  bottom: 0;
   color: #ffffff;
-  font-size: 13px;
+  font-family: "Montserrat";
+  padding-top: 1.5625rem;
+  padding-bottom: 0.9375rem;
+}
+
+.footer-text {
+  font-size: 0.875rem;
   font-weight: 400;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
-.footerInfo {
-  display: flex;
-  flex-direction: column;
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.8125rem;
 }
 
-.footerInfo_container {
-  display: flex;
-}
-
-.footerContainers {
-  margin: 3.125rem;
-  display: flex;
+.footer-yellowBorder {
+  width: 7rem;
+  border: 3px solid #f8de15;
 }
 
 .cardsContainer {
   width: 16rem;
   height: 24rem;
-  margin: 20px;
+  margin: 1.25rem;
   font-family: "Montserrat";
   background: #f5f5f5;
   box-shadow: 4px 1px 4px 2px rgb(0 0 0 / 25%);
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   position: relative;
-  left: 30px;
+  left: 1.875rem;
 }
 
 .SideBar {
@@ -211,4 +312,84 @@ body {
 
 .SideBar-i {
   margin: 20px;
+}
+
+/* Formulario */
+
+.formulario {
+  width: 300px;
+  margin-bottom: 150px;
+  margin-top: 50px;
+  margin-left: 10%;
+  min-width: 500px;
+  margin-top: 50px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.formulario > div {
+  margin-bottom: 20px;
+}
+
+.formulario label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #1f1f1f;
+}
+
+.formulario input,
+.formulario textarea {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #e2e2e2;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #1f1f1f;
+}
+
+.formulario input:focus {
+  outline: none;
+  border: 2px solid #0085ff;
+}
+
+.formulario .error {
+  color: #e92b2d;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.formulario button[type="submit"] {
+  display: block;
+  background: #0085ff;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s ease all;
+}
+
+.formulario button[type="submit"]:hover {
+  background: #0051ff;
+}
+
+.formulario .exito {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 20px;
+  color: #02a802;
+}
+
+.formulario input[type="radio"] {
+  width: auto;
 }
