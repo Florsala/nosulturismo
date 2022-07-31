@@ -62,6 +62,9 @@ const Formulario = () => {
 						onChange={handleInputCorreo}
 					/>
 				</div>
+				<div>
+				<textarea name="consulta" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Dejanos tu consulta"></textarea>
+				</div>
 
 				<button type="submit">Enviar</button>
 			</form>

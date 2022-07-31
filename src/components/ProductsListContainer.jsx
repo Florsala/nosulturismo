@@ -25,7 +25,7 @@ const ProductsListContainer = () => {
            : products;
   
           resolve(dataId);
-        }, 2000);
+        }, 2500);
       });
   
       getItems

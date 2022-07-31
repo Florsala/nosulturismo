@@ -3,9 +3,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 
-import zorro from "../assets/zorro2.jpg";
+import minitrekking from "../assets/minitrekk3.jpg";
 import rutas from "../assets/Fte2000.jpg";
-import Carousel from 'react-bootstrap/Carousel';
+import VideoBcg from './VideoBcg'
+
+import invierno from '../assets/invierno.jpg'
+import guanacos from '../assets/guanacos.jpg'
+import vista from '../assets/vista.jpg'
+import flores from '../assets/flores.jpg'
+import cartelPerito from '../assets/cartel3.jpg'
+
 
 import Card from "react-bootstrap/Card";
 import categories from "../data/categories";
@@ -13,131 +20,83 @@ import categories from "../data/categories";
 const Home = () => {
   return (
     <>
-      <section>
+<VideoBcg/>
+   {/*  <Carousel/> */}
+      
+<div className="intro">
+  <h1 style={{fontWeight:'bold', textAlign:'center', fontFamily:'Lora'}}>BIENVENIDOS A NO SUL TURISMO</h1>
+  <p style={{lineHeight: '2.2rem', letterSpacing: '0.7px', marginTop: '2rem'}}>
+    No Sul Turismo es una Agencia de Viajes y Turismo en El Calafate-Patagonia-Argentina.
 
-        <div > 
-      <Carousel>
-      <Carousel.Item interval={2500}>
-        <img
-          className="d-block w-100 carouselImg"
-          src="https://images.unsplash.com/photo-1559061211-1923837ec988?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          alt="El Calafate"
-        />
-        
-        <div className="header">
-          <div className="yellowBorder"></div>
-          <h1 className="header_title">DESCUBRI EL CALAFATE</h1>
-          <p className="header_text">
-           Tierra de glaciares
-          </p>
-          <Link to={'/destino/El Calafate'}>
-            <Button
-              style={{ backgroundColor: "#150773", borderRadius: "10px" }}
-              size="m"
-              active
-            >
-              DESCUBRÍ
-              <span>
-                <i style={{marginLeft: '2px'}} className="bi bi-arrow-right"></i>
-              </span>
-            </Button>
-          </Link>
-        </div> 
-          
-     
-      </Carousel.Item>
-      <Carousel.Item interval={2000}>
-        <img
-          className="d-block w-100 carouselImg"
-          src="https://images.unsplash.com/photo-1586970741998-42cb95207547?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          alt="El Chaltén"
-        />
-        <div className="header">
-          <div className="yellowBorder"></div>
-          <h1 className="header_title">EXPLORA EL CHALTÉN</h1>
-          <p className="header_text">
-          Capital Nacional de los Senderos
-          </p>
-          <Link to={'/destino/El Chalten'}>
-            <Button
-              style={{ backgroundColor: "#150773", borderRadius: "10px" }}
-              size="m"
-              active
-            >
-              EXPLORA
-              <span>
-                <i style={{marginLeft: '2px'}} className="bi bi-arrow-right"></i>
-              </span>
-            </Button>
-          </Link>
-        </div> 
-      </Carousel.Item>
-      <Carousel.Item interval={2000}>
-        <img 
-          className="d-block w-100 carouselImg"
-          src="https://images.unsplash.com/photo-1559061156-4a46ec29107d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          alt="Third slide"
-        />
-        <div className="header">
-          <div className="yellowBorder"></div>
-          <h1 className="header_title">VIVI USHUAIA</h1>
-          <p className="header_text">
-          Fin del mundo, principio de todo
-          </p>
-          <Link to={'/destino/Ushuaia'}>
-            <Button
-              style={{ backgroundColor: "#150773", borderRadius: "10px" }}
-              size="m"
-              active
-            >
-              EXPLORA
-              <span>
-                <i style={{marginLeft: '2px'}} className="bi bi-arrow-right"></i>
-              </span>
-            </Button>
-          </Link>
-        </div> 
+Brindamos servicios turísticos personalizados. 
+
+Somos una empresa de viajes y turismo familiar, de profesionales en Medio-Ambiente y Turismo; y que estamos trabajamos en el área hace más de 23 años. <br />
+Realizamos nuestra gestión empresarial orientada y motivada por los principios de respeto, honestidad, compromiso, calidad y transparencia.
+Tenemos experiencia brindando servicios en distintos destinos turísticos internacional receptivo de Argentina. <br />
+Sabemos lo que hacemos, pero sobre todo amamos lo que hacemos!. <br />
+
+</p>
 
 
 
-      </Carousel.Item>
-      <Carousel.Item interval={2000}>
-        <img 
-          className="d-block w-100 carouselImg"
-          src="https://images.unsplash.com/photo-1478827387698-1527781a4887?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          alt="Chile"
-        />
-        <div className="header">
-          <div className="yellowBorder"></div>
-          <h1 className="header_title">CHILE</h1>
-          <p className="header_text">
-          El paraíso vecino
-          </p>
-          <Link to={'/destino/Ushuaia'}>
-            <Button
-              style={{ backgroundColor: "#150773", borderRadius: "10px" }}
-              size="m"
-              active
-            >
-              EXPLORA
-              <span>
-                <i style={{marginLeft: '2px'}} className="bi bi-arrow-right"></i>
-              </span>
-            </Button>
-          </Link>
-        </div> 
 
 
+</div>
+<div className="thumbnailContainer">
 
-      </Carousel.Item>
+<div>
+    <img src={cartelPerito} alt="cartelPerito" />
+  </div>
+<div>
+    <img src={flores} alt="flores" />
+  </div>
+  <div >
+  <img src={invierno} alt="invierno" />
+
+  </div>
+
+  <div>
+    <img src={guanacos} alt="guanacos" />
+  </div>
+
+  <div>
+    <img src={vista} alt="vista" />
+  </div>
+
+
+</div>
+
+<div className="categories"
+       
+        >
+          {categories.map((category) => {
+            return (
+              <div key={category.id} style={{ position: "relative" }}>
+                <Link to={category.address} style={{ textDecoration: "none" }}>
+                  <div>
+                    <Image
+                      className=" categoryImg"
+                      src={category.img}
+                      alt={category.name}
+                    />
+                    <Card.ImgOverlay
+                      style={{ margin: "1.25rem", textShadow: "0 0 1.25rem black" }}
+                      className="categoryText"
+                    >
+                      <Card.Text variant="bottom">{category.name}</Card.Text>
+                    </Card.ImgOverlay>
+                  </div>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
 
 
 
 
 
 
-    </Carousel>
-    </div>
 
         {/* <div
           className="headerImage"
@@ -170,11 +129,11 @@ const Home = () => {
         </div> */}
 
        
-      </section>
+    {/*   </section> */}
 
-      <section
+      <section className="section2 container-fluid"
         style={{
-          backgroundImage: `url(${zorro})`,
+          backgroundImage: `url(${minitrekking})`,
           height: "100vh",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -204,40 +163,10 @@ const Home = () => {
           </Button> */}
         </div>
 
-        <div
-          style={{
-                    
-            marginTop: "270px",
-            display: "flex",
-            marginLeft: "93px",
-            position: "absolute",
-          }}
-        >
-          {categories.map((category) => {
-            return (
-              <div key={category.id} style={{ position: "relative" }}>
-                <Link to={category.address} style={{ textDecoration: "none" }}>
-                  <div>
-                    <Image
-                      className=" categoryImg"
-                      src={category.img}
-                      alt={category.name}
-                    />
-                    <Card.ImgOverlay
-                      style={{ margin: "20px", textShadow: "0 0 20px black" }}
-                      className="categoryText"
-                    >
-                      <Card.Text variant="bottom">{category.name}</Card.Text>
-                    </Card.ImgOverlay>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
-        </div>
+       
       </section>
 
-      <section
+      <section className="container-fluid"
         style={{
           backgroundImage: `url(${rutas})`,
           height: "100vh",
@@ -257,9 +186,9 @@ que satisfagan las necesidades y/o preferencias de los clientes, permitiendo el 
           <Button
             style={{
               backgroundColor: "#150773",
-              borderRadius: "10px",
+              borderRadius: "0.625rem",
               color: "#ffff",
-              fontSize: "18px",
+              fontSize: "1.125rem",
               
             }}
             size="m"

@@ -13,7 +13,7 @@ const categories = [
 
       { id: 3, 
         name: "Aventura", 
-        img:"/img/esmeralda.jpg",
+        img:"/img/lagglaciar.jpg",
         address: "/category/Aventura" },
 
         { id: 4, 

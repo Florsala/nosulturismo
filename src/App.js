@@ -11,6 +11,8 @@ import ProductsDestination from './components/ProductsDestination';
 import ProductDetailContainer from './components/ProductDetailContainer';
 import Contacto from './components/Contacto';
 import { BackToTopButton } from './components/BackToTopButton';
+import BtnArrep from './components/BtnArrep';
+import Nosotros from './components/Nosotros';
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
       <Route path="/tours/:id" element={<ProductDetailContainer />}/>
       <Route path="/destino/:Destination" element={<ProductsDestination/>}/>
       <Route path="/contacto" element={<Contacto />}/>
+      <Route path="/arrepentimiento" element={<BtnArrep/>}/>
+      <Route path="/Nosotros" element={<Nosotros/>}/>
 
 
 

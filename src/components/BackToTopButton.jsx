@@ -27,10 +27,10 @@ const scrollUp = () => {
     <div>
 {backToTopButton && (
     <i className="bi bi-arrow-up-circle" style={{position: "fixed",
-    right: "50px", bottom: "50px",
+    right: "3.125rem", bottom: "3.125rem",
     cursor:"pointer",
     
-    fontSize:"50px",
+    fontSize:"3.125rem",
     color:"orange"
 
 }} onClick={scrollUp} ></i>

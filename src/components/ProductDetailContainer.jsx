@@ -14,7 +14,7 @@ const ProductDetailContainer = () => {
 
   const getItem = new Promise((resolve) => {
     setTimeout(() => {
-      const data = id ? products.filter((item) => item.id == id) : products;
+      const data = id ? products.find((item) => item.id === id) : products;
 
       resolve(data);
     }, 1200);
@@ -30,7 +30,7 @@ const ProductDetailContainer = () => {
 
   return loading ? (
     <>
-      <h2>cargando...</h2>
+      <h2 style={{fontSize: '1rem', margin:'auto'}}>cargando...</h2>
       <Spinner
         style={{ margin: "50%", marginTop: "200px" }}
         animation="border"

@@ -2,54 +2,70 @@
 
  const products =  [
     {
-      id:1,  
+      id:"1",  
       title: "City Tour en El Calafate",
       category: "Aventura",
+      dificulty: "Fácil",
       destination: "El Calafate",
-      gallery: ["/img/city.jpg"],
+      gallery: ["/img/city.jpg", "/img/city2.jpg"],
       description: ["Recorrido por la Ciudad de El Calafate mostrando los puntos panorámicos más Impactantes. Acontecimientos histórico - culturales y sociales más importantes del lugar. ",
       ],
       duration: "2.30 horas",
+     
       include:[
-        "Paradas técnicas y paisajísticas. Café y/o refrigerio.",
-         "No incluye entradas a Museos.",
-      ] 
+        " Paradas técnicas y paisajísticas. ",
+         
+      ] ,
+      meals:" Café y/o refrigerio.",
+      tikets: "No incluye",
+      season: "todo el año",
+      transfer: "Traslados incluídos",
       
     },
     {
-      id:2,
+      id:"2",
       title: "Excursión Al Parque Nacional Los Glaciares",
       category: "Trekking",
+      dificulty: "Fácil",
       destination: "El Calafate",
-      gallery: ["/img/perito.jpg"],
-      description: ["Partimos desde su hotel alrededor de las 9 am de El Calafate, por la ruta nro. 11, bordeando el lago argentino. Desde su inicio el viaje depara agradables sorpresas como la Bahía Redonda, en ella se puede apreciar una variedad importante de avifauna, destacándose el cisne de cuello negro, flamenco, pato vapor, gallareta, cauquén. se destaca el color amarillo del campo, esto se debe a sus pastos llamados coirón, y entre ellos se destaca, el coirón blanco y petiso. Desde el calafate al glaciar Perito Moreno hay una distancia de 80 km, por camino asfaltado en su totalidad. En los primeros 40 km se recorre la estepa patagónica, pasando posteriormente a la entrada del Parque nacional a observar la vegetación arbórea perteneciente en su gran mayoría de la familia “nothofagus” (ñires, guindos, lengas) y uno que otro canelo, y flores de diversos colores, entre las que se resalta el notro por su colorido rojo intenso correspondiendo la misma al bosque andino patagónico. Llegada a las pasarelas donde se puede apreciar la majestuosidad del glaciar Perito Moreno. Se puede caminar por las pasarelas para apreciarlo desde distintas perspectivas y variedad de tonalidades de colores azules y celestes. donde tendremos un sector de servicios para los visitantes y un sistema de balcones y amplias pasarelas que permiten realizar caminatas por diferentes recorridos y acceder a diferentes vistas realmente indescriptibles del glaciar rodeado de montañas de los andes y al pie del mismo, la preciosa vista del lago argentino, con sus preciosos colores.",
+      gallery: ["/img/perito.jpg", "/img/perito_fondo.jpg"],
+      description: [" Partimos desde su hotel alrededor de las 9 am de El Calafate, por la ruta nro. 11, bordeando el lago argentino. Desde su inicio el viaje depara agradables sorpresas como la Bahía Redonda, en ella se puede apreciar una variedad importante de avifauna, destacándose el cisne de cuello negro, flamenco, pato vapor, gallareta, cauquén. se destaca el color amarillo del campo, esto se debe a sus pastos llamados coirón, y entre ellos se destaca, el coirón blanco y petiso. Desde el calafate al glaciar Perito Moreno hay una distancia de 80 km, por camino asfaltado en su totalidad. En los primeros 40 km se recorre la estepa patagónica, pasando posteriormente a la entrada del Parque nacional a observar la vegetación arbórea perteneciente en su gran mayoría de la familia “nothofagus” (ñires, guindos, lengas) y uno que otro canelo, y flores de diversos colores, entre las que se resalta el notro por su colorido rojo intenso correspondiendo la misma al bosque andino patagónico. Llegada a las pasarelas donde se puede apreciar la majestuosidad del glaciar Perito Moreno. Se puede caminar por las pasarelas para apreciarlo desde distintas perspectivas y variedad de tonalidades de colores azules y celestes. donde tendremos un sector de servicios para los visitantes y un sistema de balcones y amplias pasarelas que permiten realizar caminatas por diferentes recorridos y acceder a diferentes vistas realmente indescriptibles del glaciar rodeado de montañas de los andes y al pie del mismo, la preciosa vista del lago argentino, con sus preciosos colores.",
       ],
-      duration: "4 horas",
-      include: ["Traslados. No Incluye ingresos al Parque Nacional.",
-      " No Incluye almuerzo"],
-    
+      duration: " 4 horas",
+      include: [" Traslados. No Incluye ingresos al Parque Nacional.",
+      ],
+
+      meals:" No Incluye",
+      tikets: "No incluye",
+      season: "todo el año",
+      transfer: "Traslados incluídos",
   
     },
     {
-        id:3,
+        id:"3",
       title: "Safari náutico",
       category: "Navegaciones",
+      dificulty: "Fácil",
       destination: "El Calafate",
-
-      gallery: ["/img/cataPerito.jpg"],
-      description: ["Navegación Moreno Frente Al Glaciar Perito Moreno. En segundos de iniciado nuestro recorrido se podrá observar la pared norte del glaciar desde una perspectiva totalmente diferente de lo que se puede ver desde las pasarelas. Nos aproximamos y navegaremos el frente completo dentro de los límites permitidos para garantizar la seguridad de la navegación y observaremos el paisaje, disfrutaremos su silencio y también de los estruendos que anuncian los desprendimientos, siendo testigos del fenómeno, dejando un recuerdo imborrable.",
+      gallery: ["/img/cataPerito.jpg", "/img/navegacion2.jpg"],
+      description: [" Navegación Moreno Frente Al Glaciar Perito Moreno.", " En segundos de iniciado nuestro recorrido se podrá observar la pared norte del glaciar desde una perspectiva totalmente diferente de lo que se puede ver desde las pasarelas. Nos aproximamos y navegaremos el frente completo dentro de los límites permitidos para garantizar la seguridad de la navegación y observaremos el paisaje, disfrutaremos su silencio y también de los estruendos que anuncian los desprendimientos, siendo testigos del fenómeno, dejando un recuerdo imborrable.",
       ],
-      duration: "1 hora",
-      include: ["servicio de cafetería"],
-      
+      duration: " 1 hora",
+      include: [" Servicio de cafetería"],
+
+      meals:" Cafetería",
+      tikets: "Incluye",
+      season: "todo el año",
+      transfer: "Traslados incluídos",
   
     },
     {
-        id:4,
+        id:"4",
       title: "Moreno Spirit (Cara Norte)",
       category: "Navegaciones",
+      dificulty: "Fácil",
+
       destination: "El Calafate",
-      
       gallery: ["/img/perito.jpg"],
       description: ["Salimos todos los días desde Puerto Moreno (ubicado al pie de las pasarelas del paseo costero) sobre el Canal de los Témpanos. En segundos nuestra embarcación arriba al frente de la pared norte del glaciar, donde se puede apreciar su altura y su tamaño, desde una perspectiva totalmente diferente a lo que se observa desde las pasarelas. Visitamos la zona donde (cada cierta cantidad de años) se produce la famosa ruptura del glaciar, fenómeno que ha hecho que el glaciar Perito Moreno sea conocido a nivel mundial. Luego realizamos una lenta navegación frente a todo el ancho de la pared norte. Si tenemos suerte, podremos observar algún desprendimiento del glaciar. Operamos en forma diaria, con varias salidas, dependiendo la época del año. Las tarjetas de embarque se pueden adquirir en nuestra oficina comercial, en el centro de El Calafate, o en el andén del estacionamiento inferior del área de servicios del Parque Nacional Los Glaciares.",
       ],
@@ -58,9 +74,10 @@
   
     },
     {
-        id:5,
+        id:"5",
       title: "Navegación Todo Glaciares",
       category: "Navegaciones",
+      dificulty: "Fácil",
       destination: "El Calafate",
 
       gallery: ["/img/perito.jpg"],
@@ -73,9 +90,10 @@
   
     },
     {
-        id:6,
+        id:"6",
       title: "Full Day Glaciar Gourmet Classic",
       category: "Navegaciones",
+      dificulty: "Fácil",
       destination: "El Calafate",
 
       gallery: ["/img/perito.jpg"],
@@ -94,9 +112,11 @@
     },
 
     {
-      id:7,
+      id:"7",
     title: "Navegación Mayo Spirit Trek",
     category: "Navegaciones",
+    dificulty: "Fácil",
+
     destination: "El Calafate",
 
     gallery: ["/img/perito.jpg"],
@@ -113,9 +133,11 @@
   },
 
   {
-    id:8,
+    id:"8",
   title: "Nativo Experience",
   category: "Aventura",
+  dificulty: "Fácil",
+
   destination: "El Calafate",
 
   gallery: ["/img/perito.jpg"],
@@ -136,9 +158,11 @@
 },
 
 {
-  id:9,
+  id:"9",
 title: "Safari Experience",
 category: "Aventura",
+dificulty: "Fácil",
+
 destination: "El Calafate",
 
 gallery: ["/img/perito.jpg"],
@@ -158,9 +182,11 @@ include: [
 },
 
 {
-  id:10,
+  id:"10",
 title: "Traslado Aeropuerto El Calafate",
 category: "Traslados",
+dificulty: "Fácil",
+
 destination: "El Calafate",
 
 gallery: ["/img/traslado.jpg"],
@@ -177,9 +203,11 @@ include: [
 },
 
 {
-  id:11,
+  id:"11",
 title: "Balcones de El Calafate",
 category: "Aventura",
+dificulty: "Fácil",
+
 destination: "El Calafate",
 
 gallery: ["/img/balcones.jpg"],
@@ -195,9 +223,11 @@ include: [
 },
 
 {
-  id:12,
+  id:"12",
 title: "El Calafate Balcón Experience",
 category: "Aventura",
+dificulty: "Fácil",
+
 destination: "El Calafate",
 
 gallery: ["/img/perito.jpg"],
@@ -213,9 +243,11 @@ include: [
 },
 
 {
-  id:13,
+  id:"13",
 title: "Perito Moreno Kayak experience",
 category: "Aventura",
+dificulty: "Fácil",
+
 destination: "El Calafate",
 
 gallery: ["/img/perito.jpg"],
@@ -231,9 +263,11 @@ include: [
 },
 
 {
-  id:14,
+  id:"14",
 title: "Minitrekking sobre Glaciar Perito Moreno",
 category: "Aventura",
+dificulty: "Fácil",
+
 destination: "El Calafate",
 
 gallery: ["/img/minitrekk.jpg", "/img/minitrekk2.jpg"],
@@ -252,9 +286,11 @@ include: [
 
 
 {
-  id:20,
+  id:"20",
 title: "Parque Nacional Tierra del fuego",
 category: "Aventura",
+dificulty: "Fácil",
+
 destination: "Ushuaia",
 
 gallery: ["/img/esmeralda.jpg"],
