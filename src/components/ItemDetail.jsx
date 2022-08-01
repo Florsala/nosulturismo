@@ -14,7 +14,7 @@ const ItemDetail = ({ items }) => {
 
       <Card className="cardDetail">
         <Card.Body className="cardBody">
-          <div style={{display: 'flex', justifyContent: 'space-around'}}>
+          <div style={{display: 'flex', justifyContent: 'space-around', flexWrap:'wrap'}}>
             <div className="iconBox">
               <Hiking className="iconDetail" />
               <p className="iconText">Dificultad: {items.dificulty}</p>
@@ -46,9 +46,11 @@ const ItemDetail = ({ items }) => {
             Duración:
             {items.duration}
           </Card.Text>
-          <Card.Text></Card.Text> Incluye:
+          <Card.Text>
+            Incluye:
           {items.include}
-          <Card.Text style={{ marginTop: "1rem" }}>
+            </Card.Text> 
+          <Card.Text style={{ marginTop: "1rem", lineHeight: '24px' }}>
             {items.description[0]}
             {items.description[1]}
             {items.description[2]}

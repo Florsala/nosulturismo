@@ -3,8 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 
-import minitrekking from "../assets/minitrekk3.jpg";
-import rutas from "../assets/Fte2000.jpg";
+
 import VideoBcg from './VideoBcg'
 
 import invierno from '../assets/invierno.jpg'
@@ -24,7 +23,7 @@ const Home = () => {
    {/*  <Carousel/> */}
       
 <div className="intro">
-  <h1 style={{fontWeight:'bold', textAlign:'center', fontFamily:'Lora'}}>BIENVENIDOS A NO SUL TURISMO</h1>
+  <h1 style={{fontWeight:'bold', textAlign:'center', fontFamily:'Lora', color:'#35464e'}}>BIENVENIDOS A NO SUL TURISMO</h1>
   <p style={{lineHeight: '2.2rem', letterSpacing: '0.7px', marginTop: '2rem'}}>
     No Sul Turismo es una Agencia de Viajes y Turismo en El Calafate-Patagonia-Argentina.
 
@@ -66,7 +65,56 @@ Sabemos lo que hacemos, pero sobre todo amamos lo que hacemos!. <br />
 
 </div>
 
-<div className="categories"
+
+
+
+
+
+
+
+
+      <section className="container-fluid"
+        
+      >
+     
+        <div className="thirdHeader">
+        <div className="thirdHeader_yellowBorder"></div>
+
+          <h2 className="thirdHeader_title">VIVÍ LA EXPERIENCIA PATAGONIA CON NO SUL</h2>
+          <p className="thirdHeader_text">
+          Nuestro propósito es hacer viajes únicos, personalizados y realmente especiales.
+que satisfagan las necesidades y/o preferencias de los clientes, permitiendo el máximo placer dentro de un servicio personalizado.
+
+          </p>
+
+<Link to={'/Contacto'}>
+<Button
+            style={{
+              backgroundColor: "#150773",
+              borderRadius: "0.625rem",
+              color: "#ffff",
+              fontSize: "1.125rem",
+              
+            }}
+            size="m"
+            active
+          >
+           
+            CONTACTANOS
+
+            
+            <span>
+              <i style={{marginLeft: '2px'}} className="bi bi-arrow-right"></i>
+            </span>
+          </Button>
+
+</Link>
+
+          
+        </div>
+
+
+        <div className="categories"
        
         >
           {categories.map((category) => {
@@ -90,118 +138,6 @@ Sabemos lo que hacemos, pero sobre todo amamos lo que hacemos!. <br />
               </div>
             );
           })}
-        </div>
-
-
-
-
-
-
-
-        {/* <div
-          className="headerImage"
-          style={{
-            backgroundImage: `url(${perito})`,
-            height: "100vh",
-            backgroundSize: "cover",
-            filter: "contrast(1.35) brightness(0.65)",
-            position: "relative",
-          }}
-        ></div>
-        <div className="header">
-          <div className="yellowBorder"></div>
-          <h1 className="header_title">EXPLORA EL CALAFATE</h1>
-          <p className="header_text">
-           Tierra de glaciares
-          </p>
-          <Link to={'/tours'}>
-            <Button
-              style={{ backgroundColor: "#150773", borderRadius: "10px" }}
-              size="m"
-              active
-            >
-              DESCUBRÍ
-              <span>
-                <i style={{marginLeft: '2px'}} className="bi bi-arrow-right"></i>
-              </span>
-            </Button>
-          </Link>
-        </div> */}
-
-       
-    {/*   </section> */}
-
-      <section className="section2 container-fluid"
-        style={{
-          backgroundImage: `url(${minitrekking})`,
-          height: "100vh",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="secondHeader">
-          <div className="seconHeader_yellowBorder"></div>
-          <h2 className="secondHeader_title">SORPRÉNDETE</h2>
-          <p className="secondHeader_text">
-          ¡Sabemos lo que hacemos, pero sobre todo amamos lo que hacemos!
-          </p>
-        {/*   <Button
-            style={{
-              backgroundColor: "#F8DE15",
-              borderRadius: "10px",
-              color: "#1A4EA0",
-              fontSize: "18px",
-              fontWeight: "700",
-            }}
-            size="m"
-            active
-          >
-            VER TODO
-            <span>
-              <i style={{marginLeft: '2px'}} className="bi bi-arrow-right"></i>
-            </span>
-          </Button> */}
-        </div>
-
-       
-      </section>
-
-      <section className="container-fluid"
-        style={{
-          backgroundImage: `url(${rutas})`,
-          height: "100vh",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="thirdHeader">
-        <div className="thirdHeader_yellowBorder"></div>
-
-          <h2 className="thirdHeader_title">VIVÍ LA EXPERIENCIA PATAGONIA CON NO SUL</h2>
-          <p className="thirdHeader_text">
-          Nuestro propósito es hacer viajes únicos, personalizados y realmente especiales.
-que satisfagan las necesidades y/o preferencias de los clientes, permitiendo el máximo placer dentro de un servicio personalizado.
-
-          </p>
-          <Button
-            style={{
-              backgroundColor: "#150773",
-              borderRadius: "0.625rem",
-              color: "#ffff",
-              fontSize: "1.125rem",
-              
-            }}
-            size="m"
-            active
-          >
-           
-            CONTACTANOS
-
-            
-            <span>
-              <i style={{marginLeft: '2px'}} className="bi bi-arrow-right"></i>
-            </span>
-          </Button>
         </div>
       </section>
     </>

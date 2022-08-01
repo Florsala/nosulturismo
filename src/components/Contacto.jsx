@@ -1,5 +1,4 @@
 import React from "react";
-import Form from "react-bootstrap/Form";
 import Formulario from "./Formulario";
 
 const Contacto = () => {
@@ -7,6 +6,11 @@ const Contacto = () => {
     <div style={{ marginTop: "9.375rem" }}>
       <div className="contactYellowBorder"></div>
       <h1 className="contactHeader">CONTACTO</h1>
+      <p style={{marginLeft:' 8%',
+    fontSize: '18px',
+    lineHeight: '30px'}}>
+      Usted puede contratar todo en nuestra agencia de viajes y turismo: <br />
+       los pasajes aéreos o terrestres, las excursiones y paseos habilitados en la localidad.</p>
 
       <Formulario />
 
@@ -58,45 +62,7 @@ const Contacto = () => {
       </div>
       <div className="rectangle-o"></div>
 
-      {/* <div style={{marginLeft:'150px'}}>
-        <Form.Floating  className="mb-3">
-        <Form.Control
-          id="floatingInputCustom"
-          type="email"
-          placeholder="name@example.com"
-        />
-        <label htmlFor="floatingInputCustom">Email address</label>
-      </Form.Floating>
-      <Form.Floating>
-        <Form.Control
-          id="floatingPasswordCustom"
-          type="password"
-          placeholder="Password"
-        />
-        <label htmlFor="floatingPasswordCustom">Password</label>
-      </Form.Floating>
-
-      <Form.Floating style={{ marginTop: '15px'}}  className="mb-3">
-        <Form.Control
-          id="floatingInputCustom"
-          type="email"
-          placeholder="name@example.com"
-        />
-        <label htmlFor="floatingInputCustom">Email address</label>
-      </Form.Floating>
-
-      <Form.Floating>
-        <Form.Control
-          id="floatingPasswordCustom"
-          type="password"
-          placeholder="Password"
-        />
-        <label htmlFor="floatingPasswordCustom">Password</label>
-      </Form.Floating>
-
       
-
-        </div> */}
     </div>
   );
 };

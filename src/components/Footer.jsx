@@ -1,13 +1,14 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import logo from "../assets/Logo.png";
 
 const Footer = () => {
   return (
     <div className="main-footer">
       
       <div className="container" style={{display:'flex'}}>
-        <div className="row">
+        <div className="row col-md-6">
           <div className="col-md-4 col-sm-6">
             <div className="footer-yellowBorder "></div>
             <h5 className="mt-2">CONTACTO</h5>
@@ -89,30 +90,34 @@ const Footer = () => {
 
           
 
-          {/* <div className="col-md-4 col-sm-6">
-            <div className="footer-yellowBorder "></div>
-            <h5 className="mt-2">SOMOS NO SUL</h5>
-            <ul className="list-unstyled footer-text">
-              <li className="mb-4">
-                Nuestro propósito es hacer viajes únicos, personalizados y
-                realmente especiales.
-              </li>
-            </ul>
-          </div> */}
+         
         </div>
 
 
-        <div className="  col-md-4 col-sm-6">
+        <div className="  col-md-4 ">
           <div className="footer-yellowBorder mb-2"></div>
           <ul className="list-unstyled" >
-            <li className="mb-2">HOME</li>
-            <li className="mb-2">TOURS</li>
-            <li className="mb-2">NOSOTROS</li>
-            <li className="mb-2">CONTACTO</li>
+           
+           <Link style={{textDecoration:'none', color:'white'}} to={"/"}>
+           <li className="mb-2">HOME</li>
+           </Link>
+           <Link style={{textDecoration:'none', color:'white'}} to={"/destino/El Calafate"}>
+           <li className="mb-2">DESTINOS</li>
+           </Link>
+           <Link style={{textDecoration:'none', color:'white'}} to={"/Nosotros"}>
+           <li className="mb-2">NOSOTROS</li>
+           </Link>
+           <Link style={{textDecoration:'none', color:'white'}} to={"/Contacto"}>
+           <li className="mb-2">CONTACTO</li>
+           </Link>
+           
           </ul>
           
         </div>
-
+        <div className="  col-md-2">
+          <img style={{width:'8rem', marginLeft:'1rem'}} src={logo} alt="logo" />
+          
+        </div>
 
        
       </div>
@@ -149,54 +154,7 @@ const Footer = () => {
         </div>
     </div>
 
-    /*  <div>
-    <div className="container-fluid footer">
-      <div className="footerContainers">
-        <div className="container-sm footerInfo">
-          <h6>CONTACTO</h6>
-
-          <div className="footerInfo_container">
-            <span>
-              <i className="bi bi-envelope"></i>
-            </span>
-            <p>reservas@nosulturismo.tur.ar</p>
-          </div>
-          <div className="footerInfo_container">
-            <span>
-              <i className="bi bi-telephone"></i>
-            </span>
-            <p>+542966999999</p>
-          </div>
-          <div className="footerInfo_container">
-            <span>
-              <i className="bi bi-geo-alt"></i>
-            </span>
-            <p>El Calafate - Patagonia Argentina</p>
-          </div>
-        </div>
-
-        <div className="container-sm footerInfo">
-          <h6>SOMOS NO SUL</h6>
-
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, et dolore
-              magna aliqua.
-            </p>
-          </div>
-        </div>
-
-<div className="footerBottom">
-        <p> Ⓒ 2022 | All rights reserved - No Sul Turismo EVT - Leg 10000</p>
-      </div>
-
-      </div>
-
-      
-
-    </div>
-
-    </div> */
+   
   );
 };
 

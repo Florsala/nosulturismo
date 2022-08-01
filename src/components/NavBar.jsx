@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 import logo from "../assets/Logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
-
 import destination from "../data/destination";
 import { useState } from "react";
+import "./Dropdown.css";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
+  const [open, setOpen] = useState(false)
 
   const handleClick = () => setClick(!click);
 
@@ -19,20 +17,45 @@ const NavBar = () => {
     <>
       <div className="navbar">
         <div className="logo">
+
+          <Link to={"/"} >
           <img src={logo} alt="logo" />
+          </Link>
+          
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to={"/"}>HOME</Link>
+            <Link style={{color:'white', textDecoration:'none'}} to={"/"}>HOME</Link>
+          </li>
+          
+          <li className="nav-item"  onClick={() => setOpen(!open)}
+          >
+
+            <Link style={{color:'white', textDecoration:'none'}} to={"/"}>DESTINOS</Link>
+
+            <ul className={open ? "dropdown-menu open" : "dropdown-menu"}>
+            {destination.map((item) => {
+          return (
+            <li  key={item.id}>
+              <Link
+              className='dropdown-link'
+                to={item.address}
+                onClick={() => setClick(false)}
+              >
+                {item.name}
+              </Link>
+            </li>
+          );
+        })}
+            </ul>
+
+          </li>
+          
+          <li className="nav-item">
+           <Link style={{color:'white', textDecoration:'none'}} to={"/Nosotros"}>NOSOTROS</Link>
           </li>
           <li className="nav-item">
-            <Link to={"/"}>TOURS</Link>
-          </li>
-          <li className="nav-item">
-           <Link to={"/Nosotros"}>NOSOTROS</Link>
-          </li>
-          <li className="nav-item">
-            <Link to={"/contacto"}>CONTACTO</Link>
+            <Link style={{color:'white', textDecoration:'none'}} to={"/contacto"}>CONTACTO</Link>
           </li>
         </ul>
         <div className="hamburger" onClick={handleClick}>
@@ -42,6 +65,7 @@ const NavBar = () => {
             <FaBars size={30} style={{ color: "#f8f8f8" }} />
           )}
         </div>
+
       </div>
 
       {/* <Navbar

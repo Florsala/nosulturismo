@@ -1,26 +1,34 @@
 import React from 'react'
+import FormArrep from './FormArrep'
 
 const BtnArrep = () => {
   return (
-    <div class="vc_col-sm-8 wpb_column column_container  jupiter-donut- _ jupiter-donut-height-full">
+
+
+
+
+
+    
+    <div >
+
+<div style={{ marginTop: "9.375rem", marginLeft:'10%' }}>
+      <div className="contactYellowBorder"></div>
+      <h1 className="BtnArrepHeader">Arrepentimiento de compra</h1>
+      <p style={{marginLeft:' 8%',marginRight:' 8%', 
+    fontSize: '1.125rem',
+    lineHeight: '1.875rem'}}>
+      En cumplimiento con la Resolución 424/2020 de Secretaría de Comercio Interior de la República Argentina, ponemos a disposición el siguiente formulario para solicitar el arrepentimiento de compra. </p>
+
+      <FormArrep />
+
+     
+      
+    </div>
 	
-<h2 id="fancy-title-5" class="mk-fancy-title  simple-style jupiter-donut-  color-single">
-	<span> 	<p>Arrepentimiento de compra</p> </span>
-</h2>
 
 
 
-<div class=" vc_custom_1621604609064">
 
-<div id="text-block-6" class="mk-text-block  jupiter-donut- ">
-
-	
-	<p>En cumplimiento con la Resolución 424/2020 de Secretaría de Comercio Interior de la República Argentina, ponemos a disposición el siguiente formulario para solicitar el arrepentimiento de compra. </p>
-
-	
-</div>
-
-</div>
 
 </div>
   )

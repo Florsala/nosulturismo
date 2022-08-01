@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Formulario = () => {
+const FormArrep = () => {
 	const [inputNombre, cambiarInputNombre] = useState('');
 	const [inputCorreo, cambiarInputCorreo] = useState('');
 
@@ -40,7 +40,7 @@ const Formulario = () => {
 				</div>
 
 				<div>
-					<label htmlFor="correo">Correo</label>
+					<label htmlFor="correo">Correo electrónico registrado al momento de realizar la compra</label>
 					<input
 						type="text"
 						name="correo"
@@ -62,8 +62,32 @@ const Formulario = () => {
 						onChange={handleInputCorreo}
 					/>
 				</div>
+
+                <div>
+					<label htmlFor="DNI">Teléfono</label>
+					<input
+						type="number"
+						name="DNI"
+						placeholder="Su DNI"
+						id="dni"
+						value={inputCorreo}
+						onChange={handleInputCorreo}
+					/>
+				</div>
+
+                <div>
+					<label htmlFor="Fecha">Fecha de compra</label>
+					<input
+						type="date"
+						name="fecha"
+						placeholder="fecha de compra"
+						id="fecha"
+						value={inputCorreo}
+						onChange={handleInputCorreo}
+					/>
+				</div>
 				<div>
-				<textarea name="consulta" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Dejenos su consulta"></textarea>
+				<textarea name="consulta" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Mensaje opcional"></textarea>
 				</div>
 
 				<button type="submit">Enviar</button>
@@ -72,4 +96,4 @@ const Formulario = () => {
 	);
 }
  
-export default Formulario;
+export default FormArrep;

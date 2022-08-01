@@ -20,8 +20,8 @@ ul {
 }
 
 a {
-  text-decoration: none!important;
-  color: #fff!important;
+  text-decoration: none;
+ 
 }
 
 /* prueba de navbar responsive */
@@ -58,9 +58,26 @@ a {
   padding: 1rem;
 }
 
+.nav-item {
+  text-decoration: none;
+    color: white;
+}
+
+
 .hamburger {
   display: none;
 }
+
+
+@media screen and (min-width: 940px){
+
+  .nav-item:hover{
+    border-bottom: 4px solid #f8de15;
+    background: #053f9c;
+  }
+
+}
+
 
 @media screen and (max-width: 940px) {
   .nav-menu {
@@ -74,7 +91,7 @@ a {
       height: 100%;
       text-align: center;
       transition: 0.4s;
-      border-left: 9px solid #f8de15;
+      
   }
 
   .nav-menu.active {
@@ -87,6 +104,11 @@ a {
       justify-content: center;
   }
 
+  .nav-item:hover{
+    border-left: 6px solid #f8de15;
+
+  }
+
   .hamburger {
       display: flex;
   }
@@ -96,25 +118,13 @@ a {
 
 
 
+/* 
 
 
 
 
 
 
-
-
-/*  */
-
-
-/* .logo {
-  display: flex;
-  z-index: 2;
-  width: 6.125rem;
-  position: absolute;
-  margin-left: 48%;
-  top: 4.5rem;
-} */
 
 .NavBarContainer {
   display: flex;
@@ -144,15 +154,9 @@ a {
 
 #basic-nav-dropdown {
   color: #1a4ea0;
-}
-/* 
- .carouselImg {
-  filter: brightness(0.8);
+} */
 
-  object-fit: cover;
-  object-position: top;
-} 
- */
+
 .overlay {
   position: absolute;
   left: 0;
@@ -264,25 +268,19 @@ a {
 
 .thirdHeader {
   margin-bottom: 6.25rem;
-  color: #ffffff;
+  color: #35464e;
   padding: 1.5625rem;
   margin-left: 10%;
   width: 60%;
 
   }
 
-.thirdHeader_yellowBorder {
-  position: absolute;
-  width: 9.8125rem;
-  height: 0px;
-  border: 6px solid #f8de15;
-}
+
 
 .thirdHeader_title {
   font-size: 3.5rem;
   font-weight: 700;
   margin-top: 2.25rem;
-  text-shadow: 0 0 25px black;
 }
 
 .thirdHeader_text {
@@ -290,7 +288,6 @@ a {
   font-size: 1.125rem;
   line-height: 2.1875rem;
   letter-spacing: 0.06em;
-  text-shadow: 0 0 29px black;
 }
 
 .categoryImg {
@@ -472,7 +469,6 @@ margin-left: 2rem;
   width: 45rem;
   box-shadow: 4px 1px 4px 2px rgb(0 0 0 / 25%);
   border-radius: 15px;
-
   margin-top: 6rem;
   margin-bottom: 6rem;
   transform: translateY(-18rem);
@@ -482,10 +478,12 @@ margin-left: 2rem;
 .cardTitle {
   font-size: 2.25rem;
   font-weight: bold;
+  
 }
 
 .card-title {
   font-size: 1.5rem !important;
+  color: black;
 }
 
 .cardBody {
@@ -494,8 +492,8 @@ margin-left: 2rem;
 
 .iconBox {
   position: relative;
-  width: 6.1875rem;
-  height: 4rem;
+  width: 7.3rem;
+  height: 6rem;
 
   background: #d9d9d9;
   border-radius: 4px;
@@ -518,6 +516,14 @@ margin-left: 2rem;
   font-size: 0.625rem;
   text-align: center;
   margin-top: 6px;
+}
+
+/* Btn Arrepentimiento */
+.BtnArrepHeader{
+  color: #1a4ea0;
+    /* width: 31.25rem; */
+    margin-left: 6.25rem;
+    padding: 1.5625rem;
 }
 
 /* Formulario */
@@ -610,6 +616,17 @@ margin-left: 2rem;
 
 @media only screen and (max-width: 650px) {
  
+.cardDetail{
+  max-width: 32rem;
+}
+
+.cardTitle{
+  font-size: 2rem;
+}
+
+.iconBox{
+  margin-right: 2px;
+}
 
   body,
   html {
@@ -625,10 +642,7 @@ margin-left: 2rem;
   .NavBar {
     left: 86%;
   }
-/*   .logo {
-    margin-left: 8%;
-    width: 5rem;
-  } */
+
 
   body,
   html {
@@ -686,3 +700,6 @@ margin-left: 2rem;
  */
 
 }
+
+
+

@@ -14,7 +14,7 @@ const Items = ({items}) => {
 <Card className='cardsContainer' style={{ width: '24rem', height: '30rem', margin: '1.25rem' }}>
       <Card.Img style={{objectFit:'cover', height:'40%'}} variant="top" src={items.gallery[0]} />
       <Card.Body>
-        <Card.Title style={{fontSize:'1.2rem'}} >{items.title}</Card.Title>
+        <Card.Title style={{fontSize:'1.2rem', color:'black'}} >{items.title}</Card.Title>
         <p>{items.destination}</p>
         
       </Card.Body>
@@ -28,7 +28,7 @@ const Items = ({items}) => {
           {items.description[0]}
         </Card.Text> */}
         
-        <Card.Link style={{fontSize:'1rem', display: 'flex', justifyContent: 'right', alignItems: 'flex-end', alignContent: 'flex-end'}} >ver más</Card.Link>
+        <Card.Link style={{fontSize:'1.1rem', display: 'flex', justifyContent: 'right', alignItems: 'flex-end', alignContent: 'flex-end', fontWeight:'bold'}} >ver más</Card.Link>
       </Card.Body>
     </Card>
     </Link>
