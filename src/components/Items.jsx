@@ -24,9 +24,7 @@ const Items = ({items}) => {
         
       </ListGroup>
       <Card.Body>
-       {/*  <Card.Text style={{fontSize:'0.8rem', whiteSpace: 'nowrap',overflow: 'hidden', textOverflow: 'ellipsis'}}>
-          {items.description[0]}
-        </Card.Text> */}
+      
         
         <Card.Link style={{fontSize:'1.1rem', display: 'flex', justifyContent: 'right', alignItems: 'flex-end', alignContent: 'flex-end', fontWeight:'bold'}} >ver más</Card.Link>
       </Card.Body>

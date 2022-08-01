@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
 <VideoBcg/>
-   {/*  <Carousel/> */}
+ 
       
 <div className="intro">
   <h1 style={{fontWeight:'bold', textAlign:'center', fontFamily:'Lora', color:'#35464e'}}>BIENVENIDOS A NO SUL TURISMO</h1>
