@@ -24,19 +24,19 @@
     },
     {
       id:"2",
-      title: "Excursión Al Parque Nacional Los Glaciares",
+      title: "Pasarelas del Glaciar Moreno",
       category: "Trekking",
       dificulty: "Fácil",
       destination: "El Calafate",
       gallery: ["/img/perito.jpg", "/img/perito_fondo.jpg"],
       description: [" Partimos desde su hotel alrededor de las 9 am de El Calafate, por la ruta nro. 11, bordeando el lago argentino. Desde su inicio el viaje depara agradables sorpresas como la Bahía Redonda, en ella se puede apreciar una variedad importante de avifauna, destacándose el cisne de cuello negro, flamenco, pato vapor, gallareta, cauquén. se destaca el color amarillo del campo, esto se debe a sus pastos llamados coirón, y entre ellos se destaca, el coirón blanco y petiso. Desde el calafate al glaciar Perito Moreno hay una distancia de 80 km, por camino asfaltado en su totalidad. En los primeros 40 km se recorre la estepa patagónica, pasando posteriormente a la entrada del Parque nacional a observar la vegetación arbórea perteneciente en su gran mayoría de la familia “nothofagus” (ñires, guindos, lengas) y uno que otro canelo, y flores de diversos colores, entre las que se resalta el notro por su colorido rojo intenso correspondiendo la misma al bosque andino patagónico. Llegada a las pasarelas donde se puede apreciar la majestuosidad del glaciar Perito Moreno. Se puede caminar por las pasarelas para apreciarlo desde distintas perspectivas y variedad de tonalidades de colores azules y celestes. donde tendremos un sector de servicios para los visitantes y un sistema de balcones y amplias pasarelas que permiten realizar caminatas por diferentes recorridos y acceder a diferentes vistas realmente indescriptibles del glaciar rodeado de montañas de los andes y al pie del mismo, la preciosa vista del lago argentino, con sus preciosos colores.",
       ],
-      duration: " 4 horas",
+      duration: " 6:30 hs",
       include: [" Traslados. No Incluye ingresos al Parque Nacional.",
       ],
 
       meals:" No Incluye",
-      tikets: "No incluye",
+      tikets: "No incluye entradas",
       season: "todo el año",
       transfer: "Traslados incluídos",
   
@@ -47,13 +47,13 @@
       category: "Navegaciones",
       dificulty: "Fácil",
       destination: "El Calafate",
-      gallery: ["/img/cataPerito.jpg", "/img/navegacion2.jpg"],
+      gallery: ["/img/navegacion2.jpg", "/img/navegacion2.jpg"],
       description: [" Navegación Moreno Frente Al Glaciar Perito Moreno.", " En segundos de iniciado nuestro recorrido se podrá observar la pared norte del glaciar desde una perspectiva totalmente diferente de lo que se puede ver desde las pasarelas. Nos aproximamos y navegaremos el frente completo dentro de los límites permitidos para garantizar la seguridad de la navegación y observaremos el paisaje, disfrutaremos su silencio y también de los estruendos que anuncian los desprendimientos, siendo testigos del fenómeno, dejando un recuerdo imborrable.",
       ],
       duration: " 1 hora",
-      include: [" Servicio de cafetería"],
+      include: [" Traslados incluidos"],
 
-      meals:" Cafetería",
+      meals:" No incluye",
       tikets: "Incluye",
       season: "todo el año",
       transfer: "Traslados incluídos",
@@ -66,7 +66,7 @@
       dificulty: "Fácil",
 
       destination: "El Calafate",
-      gallery: ["/img/cataPerito.jpg", "/img/fiordo.jpg"],
+      gallery: ["/img/GlaciarMoreno_spirit.jpg", "/img/fiordo.jpg"],
       description: ["Salimos todos los días desde Puerto Moreno (ubicado al pie de las pasarelas del paseo costero) sobre el Canal de los Témpanos. En segundos nuestra embarcación arriba al frente de la pared norte del glaciar, donde se puede apreciar su altura y su tamaño, desde una perspectiva totalmente diferente a lo que se observa desde las pasarelas. Visitamos la zona donde (cada cierta cantidad de años) se produce la famosa ruptura del glaciar, fenómeno que ha hecho que el glaciar Perito Moreno sea conocido a nivel mundial. Luego realizamos una lenta navegación frente a todo el ancho de la pared norte. Si tenemos suerte, podremos observar algún desprendimiento del glaciar. Operamos en forma diaria, con varias salidas, dependiendo la época del año. Las tarjetas de embarque se pueden adquirir en nuestra oficina comercial, en el centro de El Calafate, o en el andén del estacionamiento inferior del área de servicios del Parque Nacional Los Glaciares.",
       ],
       duration: " 1 hora",
@@ -86,7 +86,7 @@
       dificulty: "Fácil",
       destination: "El Calafate",
 
-      gallery: ["/img/navegacion2.jpg", "/img/navegacion2.jpg"],
+      gallery: ["/img/navegacion3.jpg", "/img/navegacion3.jpg"],
       description:[ "Navegación sobre el brazo norte del lago argentino. Una vez a bordo navegaremos a través del brazo norte del lago argentino hasta llegar al canal upsala, allí, si la ubicación de los témpanos lo permite, nos aproximamos a la pared del glaciar. Luego navegaremos el canal spegazzini, donde podremos observar el glaciar seco, hasta llegar al frente del glaciar spegazzini, el más alto del parque nacional.",
      ],
       duration: "5 horas",
@@ -106,7 +106,7 @@
       dificulty: "Fácil",
       destination: "El Calafate",
 
-      gallery: ["/img/navegacion3.jpg", "/img/navegacion4.jpg"],
+      gallery: ["/img/navegacion4.jpg", "/img/navegacion4.jpg"],
       description: ["Glaciares Gourmet es una experiencia full day a bordo del crucero María turquesa que recorre algunos lugares de este paraje patagónico, navegando con el más alto confort y con una gastronomía gourmet diseñada especialmente para una experiencia memorable hacia el brazo norte del lago argentino. Visita a Bahía escuadra y muralla de condoreras, glaciar seco, glaciar heim, glaciar peineta, glaciar spegazzini. Desembarque en puesto las vacas: caminata. Visita al canal upsala. Vista panorámica del glaciar Upsala y Bertacchi. Luego se retornará al puerto la soledad desde donde retornarán en vehículo a el calafate unos 50 km.",
     ],
       duration: " 8 horas",
@@ -297,7 +297,7 @@ transfer: "Traslados incluídos",
 {
   id:"14",
 title: "Minitrekking sobre Glaciar Perito Moreno",
-category: "Aventura",
+category: "Trekking",
 dificulty: "Moderado",
 
 destination: "El Calafate",
@@ -431,7 +431,7 @@ dificulty: "Fácil",
 
 destination: "Chile",
 
-gallery: ["/img/chile.jpg", "/img/chile.jpg" ],
+gallery: ["/img/paine.jpg", "/img/paine.jpg" ],
 description: ["Partimos desde El Calafate. Al arribar al Parque Nacional Torres del Paine el primer stop panorámico es en el lago sarmiento. Allí realizamos una caminata de dificultad técnica baja y mínima exigencia física. Bordeamos una laguna amarga por sus costas de arena, para acceder a la mejor panorámica de las torres del paine. Allí hacemos una parada para una corta caminata. Luego continuaremos hacia la cascada Paine donde bajaremos para hacer el picnic a la orilla del río con vistas a las torres. El almuerzo es a la intemperie. Luego de realizar paradas en diversos miradores (laguna de los cisnes, mirador superior del nordenskjold), arribaremos al salto grande, desde donde se realiza una caminata hacia el mirador de los cuernos del paine a orillas del lago nordenskjold, esta caminata dura unas 2 horas en total. Luego se continua en el vehículo (overland truck 4x4) hasta un nuevo mirador, cerca del lago pehoe, desde donde tendrán una de las vistas más famosas del parque nacional, con los cuernos y el valle del francés de fondo, enmarcados por los lagos pehoé y nordenskjold, desde allí divisarán también, el monte paine grande y el almirante nieto.",
 ],
 duration: "14 horas",
@@ -452,7 +452,7 @@ transfer: "Traslados incluídos",
 {
   id:"20",
 title: "Full Day Tour En El Chaltén",
-category: "Traslados",
+category: "Trekking",
 dificulty: "Fácil",
 
 destination: "El Chalten",

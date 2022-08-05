@@ -115,7 +115,11 @@ const Footer = () => {
           
         </div>
         <div className="  col-md-2">
+          <Link to={"/"}>
           <img style={{width:'8rem', marginLeft:'1rem'}} src={logo} alt="logo" />
+
+          
+          </Link>
           
         </div>
 

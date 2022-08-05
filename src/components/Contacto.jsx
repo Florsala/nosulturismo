@@ -49,13 +49,19 @@ const Contacto = () => {
               <span>
                 <i className="bi bi-telephone p-2"></i>
               </span>
-              +542966999999
+              +542901611250
+            </li>
+            <li className="mb-2">
+              <span>
+                <i className="bi bi-telephone p-2"></i>
+              </span>
+              +542902494457
             </li>
             <li className="mb-2">
               <span>
                 <i className="bi bi-geo-alt p-2"></i>
               </span>
-              El Calafate - Patagonia Argentina
+              Calle 704 N° 223 El Calafate - Patagonia Argentina
             </li>
           </ul>
         </div>
