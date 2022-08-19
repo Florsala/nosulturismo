@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="main-footer">
       
-      <div className="container" style={{display:'flex'}}>
+      <div className="container" style={{display:'flex',flexWrap: 'wrap'}}>
         <div className="row col-md-6">
           <div className="col-md-4 col-sm-6">
             <div className="footer-yellowBorder "></div>
@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
 
 
-        <div className="  col-md-4 ">
+        <div className="  col-md-4 " style={{marginLeft:'2rem'}}>
           <div className="footer-yellowBorder mb-2"></div>
           <ul className="list-unstyled" >
            
@@ -116,7 +116,7 @@ const Footer = () => {
         </div>
         <div className="  col-md-2">
           <Link to={"/"}>
-          <img style={{width:'8rem', marginLeft:'1rem'}} src={logo} alt="logo" />
+          <img style={{width:'8rem', marginLeft:'2rem'}} src={logo} alt="logo" />
 
           
           </Link>

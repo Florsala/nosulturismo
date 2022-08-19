@@ -29,8 +29,9 @@
       dificulty: "Fácil",
       destination: "El Calafate",
       gallery: ["/img/perito.jpg", "/img/perito_fondo.jpg"],
-      description: [" Partimos desde su hotel alrededor de las 9 am de El Calafate, por la ruta nro. 11, bordeando el lago argentino. Desde su inicio el viaje depara agradables sorpresas como la Bahía Redonda, en ella se puede apreciar una variedad importante de avifauna, destacándose el cisne de cuello negro, flamenco, pato vapor, gallareta, cauquén. se destaca el color amarillo del campo, esto se debe a sus pastos llamados coirón, y entre ellos se destaca, el coirón blanco y petiso. Desde el calafate al glaciar Perito Moreno hay una distancia de 80 km, por camino asfaltado en su totalidad. En los primeros 40 km se recorre la estepa patagónica, pasando posteriormente a la entrada del Parque nacional a observar la vegetación arbórea perteneciente en su gran mayoría de la familia “nothofagus” (ñires, guindos, lengas) y uno que otro canelo, y flores de diversos colores, entre las que se resalta el notro por su colorido rojo intenso correspondiendo la misma al bosque andino patagónico. Llegada a las pasarelas donde se puede apreciar la majestuosidad del glaciar Perito Moreno. Se puede caminar por las pasarelas para apreciarlo desde distintas perspectivas y variedad de tonalidades de colores azules y celestes. donde tendremos un sector de servicios para los visitantes y un sistema de balcones y amplias pasarelas que permiten realizar caminatas por diferentes recorridos y acceder a diferentes vistas realmente indescriptibles del glaciar rodeado de montañas de los andes y al pie del mismo, la preciosa vista del lago argentino, con sus preciosos colores.",
-      ],
+      description: ["  Partimos desde su hotel alrededor de las 9 am de El Calafate, por la ruta nro. 11, bordeando el lago argentino. Desde su inicio el viaje depara agradables sorpresas como la Bahía Redonda, en ella se puede apreciar una variedad importante de avifauna, destacándose el cisne de cuello negro, flamenco, pato vapor, gallareta, cauquén. se destaca el color amarillo del campo, esto se debe a sus pastos llamados coirón, y entre ellos se destaca, el coirón blanco y petiso.",
+       "Desde el calafate al glaciar Perito Moreno hay una distancia de 80 km, por camino asfaltado en su totalidad. En los primeros 40 km se recorre la estepa patagónica, pasando posteriormente a la entrada del Parque nacional a observar la vegetación arbórea perteneciente en su gran mayoría de la familia “nothofagus” (ñires, guindos, lengas) y uno que otro canelo, y flores de diversos colores, entre las que se resalta el notro por su colorido rojo intenso correspondiendo la misma al bosque andino patagónico.",
+       "Llegada a las pasarelas donde se puede apreciar la majestuosidad del glaciar Perito Moreno. Se puede caminar por las pasarelas para apreciarlo desde distintas perspectivas y variedad de tonalidades de colores azules y celestes. donde tendremos un sector de servicios para los visitantes y un sistema de balcones y amplias pasarelas que permiten realizar caminatas por diferentes recorridos y acceder a diferentes vistas realmente indescriptibles del glaciar rodeado de montañas de los andes y al pie del mismo, la preciosa vista del lago argentino, con sus preciosos colores."],
       duration: " 6:30 hs",
       include: [" Traslados. No Incluye ingresos al Parque Nacional.",
       ],
@@ -101,7 +102,7 @@
     },
     {
         id:"6",
-      title: "Full Day Glaciar Gourmet Classic",
+      title: "Full Day Glaciares Gourmet Classic con traslados",
       category: "Navegaciones",
       dificulty: "Fácil",
       destination: "El Calafate",
@@ -296,7 +297,7 @@ transfer: "Traslados incluídos",
 
 {
   id:"14",
-title: "Minitrekking sobre Glaciar Perito Moreno",
+title: "Minitrekking sobre Glaciar Perito Moreno con traslados",
 category: "Trekking",
 dificulty: "Moderado",
 
@@ -307,7 +308,7 @@ description: ["Edades: 10 A 65 Años. Exigencia Física Moderada. ",
 " Salimos del hotel a las 8.30 am, luego se recorre casi 40 kilómetros hasta la portada del Parque Nacional Los Glaciares. Continúan en el bus hasta el embarcadero Bajo de las sombras. La excursión se inicia en el puerto “bajo de las sombras” aproximadamente a 6 km. antes del mirador del glaciar, donde se embarca para cruzar el Lago Rico, llegando a la costa sudoeste luego de aproximadamente 20 minutos de navegación frente a la pared sur del Glaciar Perito moreno. Luego del desembarco se accede al refugio donde los guías organizan los grupos que se componen cada uno hasta de 20 personas. Se inicia una caminata por la orilla del lago de aproximadamente 20 minutos hasta el Glaciar. Al llegar al borde del hielo los guías colocan los crampones a los participantes, quienes reciben instrucciones sobre la forma en que deben desplazarse sobre el hielo. El recorrido sobre el glaciar se realiza en aproximadamente 1:30 horas, y durante el transcurso del mismo se podrá apreciar una variedad de formaciones de hielo como: grietas, seracs, sumideros, pequeñas lagunas, etc.",
 "¿qué llevar? vestimenta: ropa cómoda y abrigada, campera impermeable o rompe viento, calzado deportivo acordonado o botas de trekking. No se admiten botas de goma, after ski ni taco alto. Lentes de sol, protector solar, guantes, gorro para sol o de abrigo para caso de frío. Llevar vianda."
 ],
-duration: " Día Completo. 1.30h de caminata",
+duration: " Día Completo. 1.30h de caminata arriba del glaciar",
 include: [
 " Caminata en pasarelas. Guia profesional.",
 " Incluye traslado desde el alojamiento ida y vuelta. No incluye entrada al parque nacional."
@@ -334,8 +335,8 @@ description: ["Comenzando desde el hotel en la ciudad de Ushuaia, en dirección 
 ],
 duration: " 4 horas",
 include: [
-"Guía profesional",
-"Incluye traslado desde el alojamiento ida y vuelta. No incluye entrada al parque nacional."
+" Guía profesional",
+" Incluye traslado desde el alojamiento ida y vuelta. No incluye entrada al Parque Nacional."
 ]     ,
 meals:"No incluye ",
 tikets: "No incluye",
@@ -363,7 +364,7 @@ include: [
 
 ]     ,
 meals:"No incluye ",
-tikets: "No incluye",
+tikets: "Incluye",
 season: "Todo el año",
 transfer: "Traslados no incluídos",
 
@@ -389,7 +390,7 @@ include: [
 
 ]     ,
 meals:"No incluye ",
-tikets: "No incluye",
+tikets: "Incluye",
 season: "Octubre a Marzo",
 transfer: "Traslados no incluídos",
 
@@ -431,7 +432,7 @@ dificulty: "Fácil",
 
 destination: "Chile",
 
-gallery: ["/img/paine.jpg", "/img/paine.jpg" ],
+gallery: ["/img/paine.jpg", "/img/paine3.jpg" ],
 description: ["Partimos desde El Calafate. Al arribar al Parque Nacional Torres del Paine el primer stop panorámico es en el lago sarmiento. Allí realizamos una caminata de dificultad técnica baja y mínima exigencia física. Bordeamos una laguna amarga por sus costas de arena, para acceder a la mejor panorámica de las torres del paine. Allí hacemos una parada para una corta caminata. Luego continuaremos hacia la cascada Paine donde bajaremos para hacer el picnic a la orilla del río con vistas a las torres. El almuerzo es a la intemperie. Luego de realizar paradas en diversos miradores (laguna de los cisnes, mirador superior del nordenskjold), arribaremos al salto grande, desde donde se realiza una caminata hacia el mirador de los cuernos del paine a orillas del lago nordenskjold, esta caminata dura unas 2 horas en total. Luego se continua en el vehículo (overland truck 4x4) hasta un nuevo mirador, cerca del lago pehoe, desde donde tendrán una de las vistas más famosas del parque nacional, con los cuernos y el valle del francés de fondo, enmarcados por los lagos pehoé y nordenskjold, desde allí divisarán también, el monte paine grande y el almirante nieto.",
 ],
 duration: "14 horas",
@@ -451,7 +452,7 @@ transfer: "Traslados incluídos",
 
 {
   id:"20",
-title: "Full Day Tour En El Chaltén",
+title: "Full Day Excursión en El Chaltén",
 category: "Trekking",
 dificulty: "Fácil",
 
@@ -461,9 +462,9 @@ gallery: ["/img/chalten.jpg", "/img/chalten3.jpg" ],
 description: ["Con caminata en el sendero mirador de los cóndores y águilas +sendero mirador de el chorrillo.",
 "Se parte desde el calafate a eso de las 8:30 de la mañana hacia el Chaltén que queda a unos 220 km. El camino en sí ya es un gran atractivo donde se irán haciendo paradas: transitamos la majestuosa  ruta 40, rodeada de estepa patagónica, bordeamos el lago argentino, cruzaremos el bellísimo río santa cruz. Luego continuaremos hasta el río la leona, donde transitamos por su cañadón hasta llegar luego de 1 hora 15 minutos, al histórico hotel de ruta paso la leona (casi un museo de la ruta 40), donde podrán hacer una parada técnica , para conocer y tomar un café con tortas caseras, desde allí continuaremos bordeando el lago viedma -teniendo la cordillera de los andes de fondo (incluido el fitz roy y el torre). antes de llegar al pueblo nos detendremos en el mirador del glaciar viedma desde donde podrán apreciar una bellísima panorámica del glaciar, la cordillera y los emblemáticos cerro fitz roy y cerro torre. llegaremos a la villa de montaña de el chaltén luego de 3 hs de viaje, habiendo recorrido 220 kms. Haremos paradas en diversos puntos panorámicos antes de llegar a el chaltén. pueblito que ha sido consagrado como la capital nacional del trekking, es por ello que año tras año confluyen miles de viajeros de todo el mundo en busca de sus magníficos senderos y sus puntos panorámicos increíbles. Luego al arribar al chaltén nos dirigimos al centro de visitantes y de interpretación del parque nacional los glaciares para escuchar una breve introducción del lugar y luego comenzamos la caminata de unos 80 minutos del sendero mirador de los cóndores y el chorrillo. Luego de descender tendrán tiempo libre para almorzar en el pueblo. Más tarde en vehículo iremos hasta el inicio del sendero mirador del salto del chorrillo y tendrán tiempo para apreciar el paisaje y tomar fotografías y luego de ahí comenzaremos el regreso, alrededor de las 6 de la tarde regresaremos al hotel de el calafate."
 ],
-duration: "30 min.",
+duration: "de 8.30am a 6pm",
 include: [
-" Traslado desde el Calafate a El Chaltén y viceversa.",
+" Excursión saliendo desde el Calafate a El Chaltén.",
 " No incluye almuerzo "
 
 ]     ,

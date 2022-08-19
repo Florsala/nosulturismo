@@ -5,7 +5,7 @@ const SideBar = () => {
   return (
     <div className="SideBar">
       <div>
-        <Link to={"/"} style={{ textDecoration: "none" }}>
+        <Link to={"/"} style={{ textDecoration: "none" }} className="sideText">
           <p
             className="SideBarText"
             style={{

@@ -5,7 +5,8 @@ import Utensils from "./Icons/utensils";
 import Tiket from "./Icons/tiket";
 import CalendarIcon from "./Icons/calendarIcon";
 import Van from "./Icons/van";
-
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/esm/Button";
 
 const ItemDetail = ({ items }) => {
   return (
@@ -14,7 +15,13 @@ const ItemDetail = ({ items }) => {
 
       <Card className="cardDetail">
         <Card.Body className="cardBody">
-          <div style={{display: 'flex', justifyContent: 'space-around', flexWrap:'wrap'}}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              flexWrap: "wrap",
+            }}
+          >
             <div className="iconBox">
               <Hiking className="iconDetail" />
               <p className="iconText">Dificultad: {items.dificulty}</p>
@@ -41,21 +48,57 @@ const ItemDetail = ({ items }) => {
             </div>
           </div>
           <p className="cardTitle">{items.title}</p>
-          <Card.Text>
-            {" "}
+          <Card.Text style={{fontWeight:"600"}}>
+           
             Duración:
             {items.duration}
           </Card.Text>
-          <Card.Text>
+          <Card.Text style={{fontWeight:"600"}}>
             Incluye:
-          {items.include}
-            </Card.Text> 
-          <Card.Text style={{ marginTop: "1rem", lineHeight: '24px' }}>
+            {items.include[0]}        
+
+          </Card.Text>
+
+          <Card.Text style={{fontWeight:"600"}}>
+          {items.include[1]}
+          </Card.Text>
+
+          <Card.Text style={{ marginTop: "1rem", lineHeight: "24px" }}>
             {items.description[0]}
+          </Card.Text>
+
+          <Card.Text style={{ marginTop: "1rem", lineHeight: "24px" }}>
             {items.description[1]}
+          </Card.Text>
+
+          <Card.Text style={{ marginTop: "1rem", lineHeight: "24px" }}>
             {items.description[2]}
           </Card.Text>
         </Card.Body>
+
+        <Button className="btnReserva"
+          style={{
+            backgroundColor: "#f44336",
+            borderRadius: "0.625rem",
+            color: "#ffff",
+            fontSize: "1.125rem",
+            margin: "2rem",
+            fontWeight: "600",
+            width: "200px",
+          }}
+          size="m"
+          active
+        >
+          <Link to={"/Contacto"} className="linkReserva">
+            QUIERO RESERVAR
+            <span>
+              <i
+                style={{ marginLeft: "2px" }}
+                className="bi bi-arrow-right"
+              ></i>
+            </span>
+          </Link>
+        </Button>
       </Card>
     </div>
   );
