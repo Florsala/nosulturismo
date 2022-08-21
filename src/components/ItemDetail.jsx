@@ -78,7 +78,7 @@ const ItemDetail = ({ items }) => {
 
         <Button className="btnReserva"
           style={{
-            backgroundColor: "#f44336",
+            backgroundColor: "#1a4ea0",
             borderRadius: "0.625rem",
             color: "#ffff",
             fontSize: "1.125rem",

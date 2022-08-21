@@ -18,18 +18,32 @@ const VideoBcg = () => {
           <p className="header_text">
            Tierra de glaciares
           </p>
-          <Link to={'/destino/El Calafate'}>
+          
             <Button
-              style={{ backgroundColor: "#150773", borderRadius: "0.625rem" }}
+            className='btnHome-1'
+              style={{  
+              borderRadius: "0.625rem",
+              width:"9.375rem"
+            
+            }}
               size="m"
               active
             >
+              <Link to={'/destino/El Calafate'}
+              style={{textDecoration:'none',
+            color:'#fff',
+            fontWeight:600,
+            letterSpacing:'0.0938rem'
+            }}
+              >
               DESCUBRÍ
               <span>
                 <i style={{marginLeft: '2px'}} className="bi bi-arrow-right"></i>
               </span>
+
+              </Link>
             </Button>
-          </Link>
+          
         </div> 
 
 

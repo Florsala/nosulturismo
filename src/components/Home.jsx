@@ -89,11 +89,15 @@ que satisfagan las necesidades y/o preferencias de los clientes, permitiendo el 
 
 <Link to={'/Contacto'}>
 <Button
+            className='btnHome-1'
             style={{
               backgroundColor: "#150773",
               borderRadius: "0.625rem",
               color: "#ffff",
               fontSize: "1.125rem",
+              fontWeight:'600',
+              letterSpacing:'0.0938rem'
+            
               
             }}
             size="m"

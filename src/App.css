@@ -123,6 +123,15 @@ a {
   justify-content: center;
   margin-left: 10%;
 }
+.btnHome-1{
+  background: linear-gradient(40deg, rgba(2,0,36,1) 0%, rgba(31,48,139,1) 35%, rgba(0,212,255,1) 100%);
+ 
+}
+.btnHome-1:hover{
+  background:  linear-gradient(90deg, rgba(76,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  transition: 0.5s;
+}
+
 
 .intro {
   width: 80%;
@@ -307,6 +316,10 @@ a {
   border: 3px solid #f8de15;
 }
 
+.footerLi:hover{
+color: #f8de15;
+}
+
 .cardsContainer {
   width: 16rem;
   height: 24rem;
@@ -350,8 +363,8 @@ a {
   text-decoration: none;
 }
 
-.SideBarText:hover{
-  color: #f49658!important;
+.SideBarText:hover {
+  color: #f8de15 !important;
 }
 
 .SideBar-icons {
@@ -362,8 +375,8 @@ a {
   padding: 1.875rem;
 }
 
-.SideBar-icons:hover{
-  color: #f49658;
+.SideBar-icons:hover {
+  color: #f8de15;
 }
 
 .SideBar-i {
@@ -417,16 +430,16 @@ a {
 
 .iconBox {
   position: relative;
-    width: 7.3rem;
-    height: 7rem;
-    background: #d9d9d9;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    /* padding-top: 0.3125rem; */
-    margin-bottom: 1.5625rem;
+  width: 7.3rem;
+  height: 7rem;
+  background: #d9d9d9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top: 0.3125rem; */
+  margin-bottom: 1.5625rem;
 }
 
 .iconDetail {
@@ -442,8 +455,8 @@ a {
   margin-top: 6px;
 
   padding-left: 2px;
-    padding-right: 2px;
-    margin-bottom: 8px;
+  padding-right: 2px;
+  margin-bottom: 8px;
 }
 
 .btnReserva {
@@ -456,8 +469,8 @@ a {
   width: 200px;
 }
 
-.btnReserva:hover{
-  background-color:  #ff5722!important;
+.btnReserva:hover {
+  background-color: #ff5722 !important;
 }
 
 .linkReserva {
@@ -465,15 +478,14 @@ a {
   color: #d9d9d9;
 }
 
-.linkReserva:hover{
+.linkReserva:hover {
   color: #fff;
 }
 
 /* Btn Arrepentimiento */
 .BtnArrepHeader {
   color: #1a4ea0;
-  /* width: 31.25rem; */
-  margin-left: 6.25rem;
+  margin-left: 5rem;
   padding: 1.5625rem;
 }
 
@@ -483,7 +495,12 @@ a {
   width: 18.75rem;
   margin-bottom: 9.375rem;
   margin-top: 3.125rem;
-  margin-left: 10%;
+
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
   min-width: 31.25rem;
   margin-top: 3.125rem;
   background: #fff;

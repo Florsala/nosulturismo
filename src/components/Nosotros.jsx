@@ -1,5 +1,4 @@
 import React from 'react'
-import estepa from '../assets/estepa2.jpg'
 
 const Nosotros = () => {
   return (
@@ -48,12 +47,12 @@ Trabajamos respetando los siguientes códigos:
 
 </div>
 
-<div>
+{/* <div>
   <img src={estepa} alt="estepa" style={{height: "500px",
     width: "100%",
     objectFit: "cover",
     opacity: "70%"}}/>
-</div>
+</div> */}
 
 </>
   )

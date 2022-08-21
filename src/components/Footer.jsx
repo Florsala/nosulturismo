@@ -99,16 +99,16 @@ const Footer = () => {
           <ul className="list-unstyled" >
            
            <Link style={{textDecoration:'none', color:'white'}} to={"/"}>
-           <li className="mb-2">HOME</li>
+           <li className="mb-2 footerLi">HOME</li>
            </Link>
            <Link style={{textDecoration:'none', color:'white'}} to={"/destino/El Calafate"}>
-           <li className="mb-2">DESTINOS</li>
+           <li className="mb-2 footerLi">DESTINOS</li>
            </Link>
            <Link style={{textDecoration:'none', color:'white'}} to={"/Nosotros"}>
-           <li className="mb-2">NOSOTROS</li>
+           <li className="mb-2 footerLi">NOSOTROS</li>
            </Link>
            <Link style={{textDecoration:'none', color:'white'}} to={"/Contacto"}>
-           <li className="mb-2">CONTACTO</li>
+           <li className="mb-2 footerLi">CONTACTO</li>
            </Link>
            
           </ul>
