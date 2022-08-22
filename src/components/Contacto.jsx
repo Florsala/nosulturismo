@@ -7,8 +7,8 @@ const Contacto = () => {
       <div className="contactYellowBorder"></div>
       <h1 className="contactHeader">CONTACTO</h1>
       <p style={{marginLeft:' 8%',
-    fontSize: '18px',
-    lineHeight: '30px'}}>
+    fontSize: '1.125rem',
+    lineHeight: '1.875rem'}}>
       Usted puede contratar todo en nuestra agencia de viajes y turismo: <br />
        los pasajes aéreos o terrestres, las excursiones y paseos habilitados en la localidad.</p>
 
@@ -24,10 +24,10 @@ const Contacto = () => {
         >
           <p
             style={{
-              fontSize: "18px",
-              padding: "10px",
+              fontSize: "1.125rem",
+              padding: "0.625rem",
               fontWeight: "500",
-              letterSpacing: "1.1px",
+              letterSpacing: "0.0688rem",
             }}
           >
             info

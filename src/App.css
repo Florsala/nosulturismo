@@ -495,6 +495,7 @@ color: #f8de15;
   width: 18.75rem;
   margin-bottom: 9.375rem;
   margin-top: 3.125rem;
+  margin-left: 10%;
 
   flex-direction: column;
   display: flex;
@@ -502,7 +503,6 @@ color: #f8de15;
   align-content: center;
 
   min-width: 31.25rem;
-  margin-top: 3.125rem;
   background: #fff;
   border-radius: 0.3125rem;
   padding: 1.25rem;
