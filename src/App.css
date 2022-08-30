@@ -136,8 +136,6 @@ a {
 .intro {
   width: 80%;
   margin: 4rem auto;
-  border-left: 0.5rem solid #f8de15;
-  padding: 2rem;
   box-shadow: 0 0.2px #f8de15;
 }
 
@@ -245,13 +243,10 @@ a {
 /* CONTACTO */
 
 .rectangle-b {
-  position: absolute;
   width: 21.875rem;
   height: 32.3125rem;
-  top: 8.75rem;
   background: #1a4ea0;
   z-index: 1;
-  right: 11rem;
 }
 
 .YellowLine {
@@ -263,20 +258,11 @@ a {
   border: 4px solid #f8de15;
 }
 
-.rectangle-o {
-  position: absolute;
-  width: 12.5rem;
-  height: 36.8125rem;
-  right: 8rem;
-  top: 7.1875rem;
 
-  background: #f49658;
-}
 
 .contactHeader {
   color: #1a4ea0;
   width: 31.25rem;
-  margin-left: 6.25rem;
   padding: 1.5625rem;
 }
 
@@ -284,7 +270,7 @@ a {
   width: 9.8125rem;
 
   border: 4px solid #f8de15;
-  margin-left: 7.75rem;
+  margin-left: 1.75rem;
 }
 
 .row > * {
@@ -485,24 +471,23 @@ color: #f8de15;
 /* Btn Arrepentimiento */
 .BtnArrepHeader {
   color: #1a4ea0;
-  margin-left: 5rem;
   padding: 1.5625rem;
 }
 
 /* Formulario */
 
 .formulario {
-  width: 18.75rem;
+  width: 32rem;
   margin-bottom: 9.375rem;
   margin-top: 3.125rem;
-  margin-left: 10%;
+  margin-right: 1rem;
+ 
 
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-content: center;
 
-  min-width: 31.25rem;
   background: #fff;
   border-radius: 0.3125rem;
   padding: 1.25rem;
@@ -575,6 +560,14 @@ color: #f8de15;
 }
 
 /*---------------------MEDIA-------------------------------------------*/
+@media only screen and (max-width: 450px) {
+  body,
+  html {
+    font-size: 6px;
+  }
+}
+
+
 @media only screen and (max-width: 590px) {
   body,
   html {
@@ -612,7 +605,7 @@ color: #f8de15;
 
   body,
   html {
-    font-size: 11px !important;
+    font-size: 11px ;
   }
 
   .header_title {
@@ -638,20 +631,19 @@ color: #f8de15;
 @media only screen and (max-width: 820px) {
   body,
   html {
-    font-size: 12px !important;
+    font-size: 12px;
   }
 
-  .rectangle-b {
+   .rectangle-b {
     display: none;
-  }
+  } 
 }
 
-@media only screen and (max-width: 1068px) {
-  .rectangle-o {
-    display: none;
-  }
+ @media only screen and (max-width: 1068px) {
+ 
 
   .rectangle-b {
     right: 0;
   }
 }
+ 

@@ -2,18 +2,35 @@ import React from "react";
 import Formulario from "./Formulario";
 
 const Contacto = () => {
+
+
+
   return (
-    <div style={{ marginTop: "9.375rem" }}>
-      <div className="contactYellowBorder"></div>
-      <h1 className="contactHeader">CONTACTO</h1>
-      <p style={{marginLeft:' 8%',
-    fontSize: '1.125rem',
-    lineHeight: '1.875rem'}}>
-      Usted puede contratar todo en nuestra agencia de viajes y turismo: <br />
-       los pasajes aéreos o terrestres, las excursiones y paseos habilitados en la localidad.</p>
+    <div style={{display:'flex',
+    flexDirection:'row',
+    flexWrap:'wrap',
+    marginLeft:'4rem',
+    marginTop:'2rem',
+    justifyContent:'center'
+    }}>
+      <div style={{ marginTop: "2rem", marginRight:'2rem' }}>
+        <div className="contactYellowBorder"></div>
+        <h1 className="contactHeader">CONTACTO</h1>
+        <p
+          style={{
+            fontSize: "1.125rem",
+            lineHeight: "1.875rem",
+            margin:'2rem'
+          }}
+        >
+          Usted puede contratar todo en nuestra agencia de viajes y turismo:{" "}
+          <br />
+          los pasajes aéreos o terrestres, las excursiones y paseos habilitados
+          en la localidad.
+        </p>
 
-      <Formulario />
-
+        <Formulario />
+      </div>
       <div className="rectangle-b">
         <div className="YellowLine"></div>
         <div
@@ -67,8 +84,6 @@ const Contacto = () => {
         </div>
       </div>
       <div className="rectangle-o"></div>
-
-      
     </div>
   );
 };

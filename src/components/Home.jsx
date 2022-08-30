@@ -8,7 +8,6 @@ import VideoBcg from './VideoBcg'
 
 import invierno from '../assets/invierno.jpg'
 import guanacos from '../assets/guanacos.jpg'
-import vista from '../assets/vista.jpg'
 import flores from '../assets/flores.jpg'
 import cartelPerito from '../assets/cartel3.jpg'
 
@@ -58,9 +57,7 @@ Sabemos lo que hacemos, pero sobre todo amamos lo que hacemos!. <br />
     <img src={guanacos} alt="guanacos" />
   </div>
 
-  <div>
-    <img src={vista} alt="vista" />
-  </div>
+
 
 
 </div>

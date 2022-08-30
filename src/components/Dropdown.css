@@ -7,6 +7,8 @@
   text-align: start;
   font-size: 1.1rem;
   font-weight: 400;
+  margin-top: 1rem;
+
 
 }
 
@@ -22,6 +24,8 @@
 
 .dropdown-menu.open {
   display: block;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .dropdown-link {
@@ -45,6 +49,10 @@
   left: 27.5rem;
   top: 17.5rem;
 
+}
+
+.dropdown-menu.open {
+  display: contents;
 }
 
 }

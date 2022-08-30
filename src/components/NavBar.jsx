@@ -15,17 +15,21 @@ const NavBar = () => {
 
   return (
     <>
+
+
       <div className="navbar">
-        <div className="logo">
+            <div className="logo">
 
           <Link to={"/"} >
           <img src={logo} alt="logo" />
           </Link>
           
         </div>
+        
+    
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link style={{color:'white', textDecoration:'none'}} to={"/"}>HOME</Link>
+            <Link style={{color:'white', textDecoration:'none'}} to={"/"}  onClick={() => setClick(false)}>HOME</Link>
           </li>
           
           <li className="nav-item"  onClick={() => setOpen(!open)}
@@ -52,10 +56,10 @@ const NavBar = () => {
           </li>
           
           <li className="nav-item">
-           <Link style={{color:'white', textDecoration:'none'}} to={"/Nosotros"}>NOSOTROS</Link>
+           <Link style={{color:'white', textDecoration:'none'}} to={"/Nosotros"}  onClick={() => setClick(false)}>NOSOTROS</Link>
           </li>
           <li className="nav-item">
-            <Link style={{color:'white', textDecoration:'none'}} to={"/contacto"}>CONTACTO</Link>
+            <Link style={{color:'white', textDecoration:'none'}} to={"/contacto"}  onClick={() => setClick(false)}>CONTACTO</Link>
           </li>
         </ul>
         <div className="hamburger" onClick={handleClick}>

@@ -4,14 +4,19 @@ import FormArrep from "./FormArrep";
 const BtnArrep = () => {
   return (
     <div>
-      <div style={{ marginTop: "9.375rem", marginLeft: "10%" }}>
+      <div style={{ display:'flex',
+    flexDirection:'column',
+    flexWrap:'wrap',
+    marginTop:'2rem',
+    justifyContent:'center',
+   }}>
+       
+        <div  style={{ marginTop: "2rem", marginRight:'2rem', marginLeft:'2rem' }}>
         <div className="contactYellowBorder"></div>
-        <div style={{width:'100%'}}>
            <h1 className="BtnArrepHeader">Arrepentimiento de compra</h1>
         <p
           style={{
-            marginLeft: " 8%",
-            marginRight: " 8%",
+            margin:'2rem',
             fontSize: "1.125rem",
             lineHeight: "1.875rem",
           }}
