@@ -99,7 +99,7 @@ const Footer = () => {
           <ul className="list-unstyled" >
            
            <Link style={{textDecoration:'none', color:'white'}} to={"/"}>
-           <li className="mb-2 footerLi">HOME</li>
+           <li className="mb-2 footerLi">INICIO</li>
            </Link>
            <Link style={{textDecoration:'none', color:'white'}} to={"/destino/El Calafate"}>
            <li className="mb-2 footerLi">DESTINOS</li>
@@ -149,11 +149,28 @@ const Footer = () => {
             </span>
           </Button>
 
+          
+
           </Link>
+          
+          <a href="https://tramitesadistancia.gob.ar/tramitesadistancia/detalle-tipo?id=624"
+           target={"blank"}>
+          
+            <p style={{
+             
+              marginTop: "1rem",
+              marginBottom: "2rem"           
+            }} 
+           
+            >Denuncia contra una agencia</p>
+          
+          
+          </a>
+         
 
           <p className="text-xs-center">
             &copy;{new Date().getFullYear()} | All rights reserved - No Sul
-            Turismo EVT - Leg 17174
+            Turismo EVT - Leg 17174 
           </p>
         </div>
     </div>

@@ -1,7 +1,24 @@
 import React, {useState} from "react";
+import emailjs from "emailjs-com";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 
+
+
 const Formulario = () => {
+
+  const sendEmail = (e) => {
+   /*  e.preventDefault(); */
+
+    emailjs.sendForm('service_o0t5z56', 'template_yy9991s', e.target, 'BsfYLVTbz5mz1AsJg')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
+
 
 const [sendForm, setSendForm] = useState(false);
 
@@ -45,7 +62,11 @@ error.correo ='El correo no parece válido'
 			resetForm();
           console.log("enviado");
 		  setSendForm(true);
-		  setTimeout(() => setSendForm(false), 5000)
+		  setTimeout(() => {
+      sendEmail(valores)  
+      setSendForm(false)  
+      }   
+      , 5000)
         }}
       >
         {({ values, errors, touched }) => (

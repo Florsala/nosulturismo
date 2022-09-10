@@ -1,27 +1,7 @@
 
 
  const products =  [
-    {
-      id:"1",  
-      title: "City Tour en El Calafate",
-      category: "Aventura",
-      dificulty: "Fácil",
-      destination: "El Calafate",
-      gallery: ["/img/city.jpg", "/img/city2.jpg"],
-      description: ["Recorrido por la Ciudad de El Calafate mostrando los puntos panorámicos más Impactantes. Acontecimientos histórico - culturales y sociales más importantes del lugar. ",
-      ],
-      duration: "2.30 horas",
-     
-      include:[
-        " Paradas técnicas y paisajísticas. ",
-         
-      ] ,
-      meals:" Café y/o refrigerio.",
-      tikets: "No incluye",
-      season: "todo el año",
-      transfer: "Traslados incluídos",
-      
-    },
+   
     {
       id:"2",
       title: "Pasarelas del Glaciar Moreno",
@@ -41,6 +21,32 @@
       season: "todo el año",
       transfer: "Traslados incluídos",
   
+    },
+
+    {
+      id:"14",
+    title: "Minitrekking sobre Glaciar Perito Moreno con traslados",
+    category: "Trekking",
+    dificulty: "Moderado",
+    
+    destination: "El Calafate",
+    
+    gallery: ["/img/minitrekk.jpg", "/img/minitrekk3.jpg"],
+    description: ["Edades: 10 A 65 Años. Exigencia Física Moderada. ",
+    " Salimos del hotel a las 8.30 am, luego se recorre casi 40 kilómetros hasta la portada del Parque Nacional Los Glaciares. Continúan en el bus hasta el embarcadero Bajo de las sombras. La excursión se inicia en el puerto “bajo de las sombras” aproximadamente a 6 km. antes del mirador del glaciar, donde se embarca para cruzar el Lago Rico, llegando a la costa sudoeste luego de aproximadamente 20 minutos de navegación frente a la pared sur del Glaciar Perito moreno. Luego del desembarco se accede al refugio donde los guías organizan los grupos que se componen cada uno hasta de 20 personas. Se inicia una caminata por la orilla del lago de aproximadamente 20 minutos hasta el Glaciar. Al llegar al borde del hielo los guías colocan los crampones a los participantes, quienes reciben instrucciones sobre la forma en que deben desplazarse sobre el hielo. El recorrido sobre el glaciar se realiza en aproximadamente 1:30 horas, y durante el transcurso del mismo se podrá apreciar una variedad de formaciones de hielo como: grietas, seracs, sumideros, pequeñas lagunas, etc.",
+    "¿qué llevar? vestimenta: ropa cómoda y abrigada, campera impermeable o rompe viento, calzado deportivo acordonado o botas de trekking. No se admiten botas de goma, after ski ni taco alto. Lentes de sol, protector solar, guantes, gorro para sol o de abrigo para caso de frío. Llevar vianda."
+    ],
+    duration: " Día Completo. 1.30h de caminata arriba del glaciar",
+    include: [
+    " Caminata en pasarelas. Guia profesional.",
+    " Incluye traslado desde el alojamiento ida y vuelta. No incluye entrada al parque nacional."
+    ]     ,
+    meals:"Snack ",
+    tikets: "No incluye",
+    season: "Octubre a marzo",
+    transfer: "Traslados incluídos",
+    
+    
     },
     {
         id:"3",
@@ -107,10 +113,10 @@
       dificulty: "Fácil",
       destination: "El Calafate",
 
-      gallery: ["/img/navegacion4.jpg", "/img/navegacion4.jpg"],
+      gallery: ["/img/glaciarGourmet.png", "/img/glaciarGourmet2.jpg"],
       description: ["Glaciares Gourmet es una experiencia full day a bordo del crucero María turquesa que recorre algunos lugares de este paraje patagónico, navegando con el más alto confort y con una gastronomía gourmet diseñada especialmente para una experiencia memorable hacia el brazo norte del lago argentino. Visita a Bahía escuadra y muralla de condoreras, glaciar seco, glaciar heim, glaciar peineta, glaciar spegazzini. Desembarque en puesto las vacas: caminata. Visita al canal upsala. Vista panorámica del glaciar Upsala y Bertacchi. Luego se retornará al puerto la soledad desde donde retornarán en vehículo a el calafate unos 50 km.",
     ],
-      duration: " 8 horas",
+      duration: " 10 horas - Navegación + traslados",
       include: [
       "Guía profesional y almuerzo.",
       "Incluye traslado desde el alojamiento ida y vuelta. No incluye entrada al parque nacional."
@@ -225,6 +231,27 @@ transfer: "Traslados incluídos",
 
 
 },
+{
+  id:"1",  
+  title: "City Tour en El Calafate",
+  category: "Aventura",
+  dificulty: "Fácil",
+  destination: "El Calafate",
+  gallery: ["/img/city.jpg", "/img/city2.jpg"],
+  description: ["Recorrido por la Ciudad de El Calafate mostrando los puntos panorámicos más Impactantes. Acontecimientos histórico - culturales y sociales más importantes del lugar. ",
+  ],
+  duration: "2.30 horas",
+ 
+  include:[
+    " Paradas técnicas y paisajísticas. ",
+     
+  ] ,
+  meals:" Café y/o refrigerio.",
+  tikets: "No incluye",
+  season: "todo el año",
+  transfer: "Traslados incluídos",
+  
+},
 
 {
   id:"11",
@@ -295,31 +322,7 @@ transfer: "Traslados incluídos",
 
 },
 
-{
-  id:"14",
-title: "Minitrekking sobre Glaciar Perito Moreno con traslados",
-category: "Trekking",
-dificulty: "Moderado",
 
-destination: "El Calafate",
-
-gallery: ["/img/minitrekk.jpg", "/img/minitrekk3.jpg"],
-description: ["Edades: 10 A 65 Años. Exigencia Física Moderada. ",
-" Salimos del hotel a las 8.30 am, luego se recorre casi 40 kilómetros hasta la portada del Parque Nacional Los Glaciares. Continúan en el bus hasta el embarcadero Bajo de las sombras. La excursión se inicia en el puerto “bajo de las sombras” aproximadamente a 6 km. antes del mirador del glaciar, donde se embarca para cruzar el Lago Rico, llegando a la costa sudoeste luego de aproximadamente 20 minutos de navegación frente a la pared sur del Glaciar Perito moreno. Luego del desembarco se accede al refugio donde los guías organizan los grupos que se componen cada uno hasta de 20 personas. Se inicia una caminata por la orilla del lago de aproximadamente 20 minutos hasta el Glaciar. Al llegar al borde del hielo los guías colocan los crampones a los participantes, quienes reciben instrucciones sobre la forma en que deben desplazarse sobre el hielo. El recorrido sobre el glaciar se realiza en aproximadamente 1:30 horas, y durante el transcurso del mismo se podrá apreciar una variedad de formaciones de hielo como: grietas, seracs, sumideros, pequeñas lagunas, etc.",
-"¿qué llevar? vestimenta: ropa cómoda y abrigada, campera impermeable o rompe viento, calzado deportivo acordonado o botas de trekking. No se admiten botas de goma, after ski ni taco alto. Lentes de sol, protector solar, guantes, gorro para sol o de abrigo para caso de frío. Llevar vianda."
-],
-duration: " Día Completo. 1.30h de caminata arriba del glaciar",
-include: [
-" Caminata en pasarelas. Guia profesional.",
-" Incluye traslado desde el alojamiento ida y vuelta. No incluye entrada al parque nacional."
-]     ,
-meals:"Snack ",
-tikets: "No incluye",
-season: "Octubre a marzo",
-transfer: "Traslados incluídos",
-
-
-},
 
 
 {

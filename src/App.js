@@ -13,6 +13,7 @@ import Contacto from './components/Contacto';
 import { BackToTopButton } from './components/BackToTopButton';
 import BtnArrep from './components/BtnArrep';
 import Nosotros from './components/Nosotros';
+import Whatsapp from './components/Whatsapp';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 
             
     </Routes>
+    <Whatsapp/>
     <BackToTopButton/>
     <Footer/>
   </div>

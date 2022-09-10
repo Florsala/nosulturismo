@@ -13,6 +13,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
+  
 }
 
 ul {
@@ -27,7 +28,29 @@ a {
 .logo {
   margin-left: 10%;
 }
+
+.NavBar-icons{
+display: none;
+font-size: 2rem;
+
+}
+
+
+
+.NavBar-icons::before {
+  padding: 1.875rem;
+}
+
+.NavBar-icons:hover {
+  color: #f8de15;
+}
+
+
+
+
+
 .navbar {
+  position: fixed !important;
   width: 100%;
   height: 6.25rem;
   display: flex;
@@ -35,30 +58,30 @@ a {
   align-items: center;
   padding: 1rem;
   background-color: #1a4ea0;
-  position: absolute;
+  /* position: absolute; */
   z-index: 2;
   font-size: 1.125rem;
   font-weight: bold;
   line-height: 1.0625rem;
   font-family: "Montserrat";
   letter-spacing: 0.0313rem;
+  top: 0;
 }
 
 .navbar img {
-  width: 80px;
+  width: 5rem;
 }
 
 .nav-menu {
   display: flex;
-}
-
-.nav-item {
-  padding: 1rem;
+  margin-right: 1rem;
 }
 
 .nav-item {
   text-decoration: none;
   color: white;
+  position: relative;
+  padding: 1rem;
 }
 
 .hamburger {
@@ -67,8 +90,27 @@ a {
 
 @media screen and (min-width: 940px) {
   .nav-item:hover {
-    border-bottom: 4px solid #f8de15;
+    border-radius: 2px;
     background: #053f9c;
+  }
+
+  .nav-item:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.1875rem;
+    border-radius: 0.125rem;
+    bottom: 0;
+    left: 0;
+    background-color: #f8de15;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .nav-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 }
 
@@ -102,8 +144,29 @@ a {
 
   .hamburger {
     display: flex;
+    padding-right: 0.625rem;
+    cursor: pointer;
   }
+
+.logo {
+  margin-left: 4%;
 }
+  .NavBar-icons{
+    display: flex;
+    text-decoration: none;
+  }
+
+  .FloatIcon {
+    margin-bottom: 0;
+    margin-left: 3px!important;
+
+  }
+
+  .Arrep {
+    margin-left: 0rem!important;
+  }
+
+ }
 
 .overlay {
   position: absolute;
@@ -123,20 +186,51 @@ a {
   justify-content: center;
   margin-left: 10%;
 }
-.btnHome-1{
-  background: linear-gradient(40deg, rgba(2,0,36,1) 0%, rgba(31,48,139,1) 35%, rgba(0,212,255,1) 100%);
- 
+.btnHome-1 {
+  background: linear-gradient(
+    40deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(31, 48, 139, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
-.btnHome-1:hover{
-  background:  linear-gradient(90deg, rgba(76,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+.btnHome-1:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(76, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
   transition: 0.5s;
 }
 
+.FloatIcon{
+  margin-left: 4.2rem;
+  position: fixed;
+  width: 4rem;
+  bottom: 1.3125rem;
+  color: #FFF;
+  border-radius: 50%;
+  font-size: 2.375rem;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(234 241 234);
+  height: 4rem;
+  background: green;
+
+}
+
+.FloatIcon:hover{
+  transform: scale3d(1.06, 1.06, 1.06);
+}
 
 .intro {
   width: 80%;
   margin: 4rem auto;
   box-shadow: 0 0.2px #f8de15;
+  margin-top: 10rem;
 }
 
 .HomeHeader {
@@ -150,6 +244,8 @@ a {
 .header {
   color: #ffffff;
   padding: 1.5625rem;
+
+  
 }
 
 .header_title {
@@ -159,6 +255,8 @@ a {
   text-shadow: 0 0 1.5625rem black;
   margin-bottom: 1.5625rem;
   border-bottom: 0.3rem solid #f8de15;
+
+  
 }
 
 .header_text {
@@ -240,6 +338,10 @@ a {
   box-shadow: 4px 1px 4px 2px rgb(0 0 0 / 25%);
 }
 
+.categoryCard:hover{
+  transform: scale3d(1.02, 1.02, 1.02);
+}
+
 /* CONTACTO */
 
 .rectangle-b {
@@ -247,6 +349,8 @@ a {
   height: 32.3125rem;
   background: #1a4ea0;
   z-index: 1;
+  margin-top: 8rem;
+
 }
 
 .YellowLine {
@@ -258,12 +362,11 @@ a {
   border: 4px solid #f8de15;
 }
 
-
-
 .contactHeader {
   color: #1a4ea0;
   width: 31.25rem;
   padding: 1.5625rem;
+  margin-top: 2rem;
 }
 
 .contactYellowBorder {
@@ -302,21 +405,19 @@ a {
   border: 3px solid #f8de15;
 }
 
-.footerLi:hover{
-color: #f8de15;
+.footerLi:hover {
+  color: #f8de15;
 }
 
 .cardsContainer {
-  width: 16rem;
-  height: 24rem;
-  margin: 1.25rem;
+
   font-family: "Montserrat";
   background: #f5f5f5;
   box-shadow: 4px 1px 4px 2px rgb(0 0 0 / 25%);
   border-radius: 0.9375rem;
   position: relative;
-  left: 1.875rem;
-}
+/*   left: 1.875rem;
+ */}
 
 .SideBar {
   background-color: #1a4ea0;
@@ -469,6 +570,17 @@ color: #f8de15;
 }
 
 /* Btn Arrepentimiento */
+
+.Arrep {
+  display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    margin-top:7rem;
+    justify-content: center;
+    margin-left: 10rem;
+   
+}
+
 .BtnArrepHeader {
   color: #1a4ea0;
   padding: 1.5625rem;
@@ -481,7 +593,6 @@ color: #f8de15;
   margin-bottom: 9.375rem;
   margin-top: 3.125rem;
   margin-right: 1rem;
- 
 
   flex-direction: column;
   display: flex;
@@ -567,7 +678,6 @@ color: #f8de15;
   }
 }
 
-
 @media only screen and (max-width: 590px) {
   body,
   html {
@@ -605,7 +715,7 @@ color: #f8de15;
 
   body,
   html {
-    font-size: 11px ;
+    font-size: 11px;
   }
 
   .header_title {
@@ -634,16 +744,13 @@ color: #f8de15;
     font-size: 12px;
   }
 
-   .rectangle-b {
+  .rectangle-b {
     display: none;
-  } 
+  }
 }
 
- @media only screen and (max-width: 1068px) {
- 
-
+@media only screen and (max-width: 1068px) {
   .rectangle-b {
     right: 0;
   }
 }
- 

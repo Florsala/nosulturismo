@@ -4,12 +4,7 @@ import FormArrep from "./FormArrep";
 const BtnArrep = () => {
   return (
     <div>
-      <div style={{ display:'flex',
-    flexDirection:'column',
-    flexWrap:'wrap',
-    marginTop:'2rem',
-    justifyContent:'center',
-   }}>
+      <div className="Arrep">
        
         <div  style={{ marginTop: "2rem", marginRight:'2rem', marginLeft:'2rem' }}>
         <div className="contactYellowBorder"></div>
