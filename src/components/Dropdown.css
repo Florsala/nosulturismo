@@ -13,6 +13,7 @@
 .dropdown-menu li {
   background: #053f9c;
   cursor: pointer;
+
 }
 
 .dropdown-menu li:hover {
@@ -22,7 +23,8 @@
 .dropdown-menu.open {
   display: block;
   text-transform: uppercase;
-  text-align: left;
+  text-align: left; 
+   top: 3.5rem;
 }
 
 .dropdown-link {

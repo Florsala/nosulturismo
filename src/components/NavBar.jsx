@@ -38,7 +38,7 @@ const NavBar = () => {
             }}
           >
           
-            No Sul Turismo EVT - Leg 17174
+            No Sul Turismo EVT - Leg 17174 - Disp: 265/18 Mintur
           </p> 
 
          
