@@ -1,4 +1,232 @@
-import React, {useState} from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useForm } from "../hooks/useForm";
+
+
+const initialForm = {}
+
+const validateForm = (form) =>{} 
+
+
+const Formulario = () => {
+
+const {
+  form,
+  errors,
+  loading,
+  response,
+  handleChange,
+  handleBlur,
+  handleSubmit} = useForm(initialForm,validateForm)
+
+
+return (
+  <>
+      <form  onSubmit={handleSubmit}  className="formulario">
+        <div>
+          <label htmlFor="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre"
+            id="nombre"
+            value={form.nombre}
+            onBlur={handleBlur}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="correo">Correo</label>
+          <input
+            type="email"
+            name="correo"
+            placeholder="Correo"
+            id="correo"
+            value={form.correo}
+            onBlur={handleBlur}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="Telefono">Teléfono</label>
+          <input
+            type="number"
+            name="telefono"
+            placeholder="Telefono"
+            id="telefono"
+            value={form.nombre}
+            onBlur={handleBlur}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div>
+          <textarea
+            name="consulta"
+            as="textarea"
+            cols="40"
+            rows="10"
+            aria-required="true"
+            aria-invalid="false"
+            placeholder="Dejenos su consulta"
+            value={form.consulta}
+            onBlur={handleBlur}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <input
+          style={{ backgroundColor: "#ffdf00", borderRadius: "5px" }}
+          type="submit"
+          value="Enviar"
+        />
+      </form>
+    </>
+)
+
+};
+
+export default Formulario;
+
+
+
+
+/* 
+
+segunda prueba
+
+
+  const [inputNombre, cambiarInputNombre] = useState("");
+  const [inputCorreo, cambiarInputCorreo] = useState("");
+  const [inputTel, cambiarInputTel] = useState("");
+  const [inputMsg, cambiarInputMsg] = useState("");
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_o0t5z56",
+        "template_yy9991s",
+        form.current,
+        "BsfYLVTbz5mz1AsJg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  // Funcion que se encargara de validar los datos y enviar el formulario
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Comprobamos validacion del formulario ...
+    // Si todo es correcto enviamos el formulario
+
+    console.log("Formulario Enviado!");
+  };
+
+  // Funcion que se encarga de cambiar el estado del inputNombre
+  const handleInputNombre = (e) => {
+    cambiarInputNombre(e.target.value);
+  };
+
+  // Funcion que se encarga de cambiar el estado del inputCorreo
+  const handleInputCorreo = (e) => {
+    cambiarInputCorreo(e.target.value);
+  };
+
+  const handleInputTel = (e) => {
+    cambiarInputTel(e.target.value);
+  };
+
+  const handleInputMsg = (e) => {
+    cambiarInputMsg(e.target.value);
+  };
+ 
+  return (
+    <>
+      <form ref={form} onSubmit={sendEmail} action="" className="formulario">
+        <div>
+          <label htmlFor="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre"
+            id="nombre"
+            value={inputNombre}
+            onChange={handleInputNombre}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="correo">Correo</label>
+          <input
+            type="email"
+            name="correo"
+            placeholder="Correo"
+            id="correo"
+            value={inputCorreo}
+            onChange={handleInputCorreo}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="Telefono">Teléfono</label>
+          <input
+            type="number"
+            name="telefono"
+            placeholder="Telefono"
+            id="telefono"
+            value={inputTel}
+            onChange={handleInputTel}
+          />
+        </div>
+
+        <div>
+          <textarea
+            name="consulta"
+            as="textarea"
+            cols="40"
+            rows="10"
+            aria-required="true"
+            aria-invalid="false"
+            placeholder="Dejenos su consulta"
+            value={inputMsg}
+            onChange={handleInputMsg}
+            required
+          />
+        </div>
+
+        <input
+          style={{ backgroundColor: "#ffdf00", borderRadius: "5px" }}
+          type="submit"
+          value="Enviar"
+        />
+      </form>
+    </>
+  );
+};
+
+export default Formulario;
+
+*/
+
+/* import React, {useState} from "react";
 import emailjs from "emailjs-com";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 
@@ -7,7 +235,7 @@ import { ErrorMessage, Formik, Form, Field } from "formik";
 const Formulario = () => {
 
   const sendEmail = (e) => {
-   /*  e.preventDefault(); */
+    e.preventDefault(); 
 
     emailjs.sendForm('service_o0t5z56', 'template_yy9991s', e.target, 'BsfYLVTbz5mz1AsJg')
       .then((result) => {
@@ -133,3 +361,4 @@ error.correo ='El correo no parece válido'
 };
 
 export default Formulario;
+ */

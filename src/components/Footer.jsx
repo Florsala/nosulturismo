@@ -113,7 +113,7 @@ const Footer = () => {
             </Link>
           </ul>
         </div>
-        <div className="  col-md-2">
+  {/*       <div className="  col-md-2">
           <Link to={"/"}>
             <img
               style={{ width: "8rem", marginLeft: "2rem" }}
@@ -121,7 +121,7 @@ const Footer = () => {
               alt="logo"
             />
           </Link>
-        </div>
+        </div> */}
       </div>
 
       <div className="footer-bottom">
