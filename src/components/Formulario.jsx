@@ -1,15 +1,29 @@
-import React, { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { useForm } from "../hooks/useForm";
+/* import React, { useState, useRef } from "react";
+ import emailjs from "@emailjs/browser";
+ import { useForm } from "../hooks/useForm";
 
 
-const initialForm = {}
+const initialForm = {
+  name: "",
+  email:"",
+  telephone: "",
+  message: "",
 
-const validateForm = (form) =>{} 
+};
+
+const validationsForm = (form) =>{
+let errors = {};
+
+if(!form.name.trim()){
+  errors.name = "El Nombre es requerido"
+}
+  
+} 
 
 
 const Formulario = () => {
 
+  //destruturamos de useForm
 const {
   form,
   errors,
@@ -17,7 +31,7 @@ const {
   response,
   handleChange,
   handleBlur,
-  handleSubmit} = useForm(initialForm,validateForm)
+  handleSubmit} = useForm(initialForm,validationsForm)
 
 
 return (
@@ -27,10 +41,10 @@ return (
           <label htmlFor="nombre">Nombre</label>
           <input
             type="text"
-            name="nombre"
+            name="name"
             placeholder="Nombre"
             id="nombre"
-            value={form.nombre}
+            value={form.name}
             onBlur={handleBlur}
             onChange={handleChange}
             required
@@ -41,10 +55,10 @@ return (
           <label htmlFor="correo">Correo</label>
           <input
             type="email"
-            name="correo"
+            name="email"
             placeholder="Correo"
             id="correo"
-            value={form.correo}
+            value={form.email}
             onBlur={handleBlur}
             onChange={handleChange}
             required
@@ -55,10 +69,10 @@ return (
           <label htmlFor="Telefono">Teléfono</label>
           <input
             type="number"
-            name="telefono"
+            name="telephone"
             placeholder="Telefono"
             id="telefono"
-            value={form.nombre}
+            value={form.telephone}
             onBlur={handleBlur}
             onChange={handleChange}
           />
@@ -66,14 +80,14 @@ return (
 
         <div>
           <textarea
-            name="consulta"
+            name="message"
             as="textarea"
             cols="40"
             rows="10"
             aria-required="true"
             aria-invalid="false"
             placeholder="Dejenos su consulta"
-            value={form.consulta}
+            value={form.message}
             onBlur={handleBlur}
             onChange={handleChange}
             required
@@ -84,32 +98,30 @@ return (
           style={{ backgroundColor: "#ffdf00", borderRadius: "5px" }}
           type="submit"
           value="Enviar"
-        />
+        /> 
       </form>
     </>
 )
 
 };
 
-export default Formulario;
+export default Formulario; */
 
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-
-
-/* 
-
-segunda prueba
-
-
+const Formulario = () => {
   const [inputNombre, cambiarInputNombre] = useState("");
   const [inputCorreo, cambiarInputCorreo] = useState("");
   const [inputTel, cambiarInputTel] = useState("");
   const [inputMsg, cambiarInputMsg] = useState("");
+  const [sentForm, setSentForm] = useState(false);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setSentForm(true);
 
     emailjs
       .sendForm(
@@ -121,6 +133,10 @@ segunda prueba
       .then(
         (result) => {
           console.log(result.text);
+          cambiarInputNombre("");
+          cambiarInputCorreo("");
+          cambiarInputTel("");
+          cambiarInputMsg("");
         },
         (error) => {
           console.log(error.text);
@@ -155,7 +171,7 @@ segunda prueba
   const handleInputMsg = (e) => {
     cambiarInputMsg(e.target.value);
   };
- 
+
   return (
     <>
       <form ref={form} onSubmit={sendEmail} action="" className="formulario">
@@ -212,19 +228,23 @@ segunda prueba
           />
         </div>
 
-        <input
-          style={{ backgroundColor: "#ffdf00", borderRadius: "5px" }}
-          type="submit"
-          value="Enviar"
-        />
+        <input className="btnForm" type="submit" value="Enviar" />
+
+{sentForm && (
+  <div>
+    Tu mensaje ha sido enviado
+  </div>
+)}
+
+
+
+
       </form>
     </>
   );
 };
 
 export default Formulario;
-
-*/
 
 /* import React, {useState} from "react";
 import emailjs from "emailjs-com";
