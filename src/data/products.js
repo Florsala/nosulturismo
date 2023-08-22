@@ -352,6 +352,29 @@ transfer: "Traslados incluídos",
 
 {
   id:"16",
+title: "Lagos Escondido y Fagnano",
+category: "Aventura",
+dificulty: "Fácil",
+
+destination: "Ushuaia",
+
+gallery: ["/img/escondido.jpg", "/img/escondido.jpg"],
+description: ["Desayuno en el hotel, posteriormente salida para visitar los lagos : tomando la ruta nacional n° 3 hacia el norte y rodeados de un paisaje montañoso incomparable se visitan los lagos escondido y fagnano, visitando en la ida los centros invernales, criaderos de cachorros huskies siberianos, centro de esquí cerro castor (teleférico no incluido). almuerzo no incluido. Regreso a ushuaia alrededor de las 16h."],
+duration: " 6 horas",
+include: [
+" Guía profesional",
+" Incluye traslado desde el alojamiento ida y vuelta. "
+]     ,
+meals:"No incluye ",
+tikets: "No incluye",
+season: "Todo el año",
+transfer: "Traslados incluídos",
+
+
+},
+
+{
+  id:"17",
 title: "Navegación Isla de lobos + Faro",
 category: "Navegaciones",
 dificulty: "Fácil",
@@ -377,7 +400,7 @@ transfer: "Traslados no incluídos",
 },
 
 {
-  id:"17",
+  id:"18",
 title: "Navegación Pingüinera",
 category: "Navegaciones",
 dificulty: "Fácil",
@@ -403,7 +426,7 @@ transfer: "Traslados no incluídos",
 },
 
 {
-  id:"18",
+  id:"19",
 title: "Trekking Laguna Esmeralda",
 category: "Aventura",
 dificulty: "Media",
@@ -430,7 +453,7 @@ transfer: "Traslados incluídos",
 
 
 {
-  id:"19",
+  id:"20",
 title: "Traslado Aeropuerto Ushuaia",
 category: "Traslados",
 dificulty: "Fácil",
@@ -456,7 +479,7 @@ transfer: "Traslados incluídos",
 },
 
 {
-  id:"20",
+  id:"21",
 title: "Full day Torres del Paine",
 category: "Aventura",
 dificulty: "Fácil",
@@ -482,7 +505,7 @@ transfer: "Traslados incluídos",
 },
 
 {
-  id:"21",
+  id:"22",
 title: "Full Day Excursión en El Chaltén",
 category: "Trekking",
 dificulty: "Fácil",
