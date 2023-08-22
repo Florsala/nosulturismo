@@ -49,23 +49,30 @@
     
     },
     {
-        id:"3",
-      title: "Safari náutico",
-      category: "Navegaciones",
-      dificulty: "Fácil",
-      destination: "El Calafate",
-      gallery: ["/img/navegacion2.jpg", "/img/navegacion2.jpg"],
-      description: [" Navegación Moreno Frente Al Glaciar Perito Moreno.", " En segundos de iniciado nuestro recorrido se podrá observar la pared norte del glaciar desde una perspectiva totalmente diferente de lo que se puede ver desde las pasarelas. Nos aproximamos y navegaremos el frente completo dentro de los límites permitidos para garantizar la seguridad de la navegación y observaremos el paisaje, disfrutaremos su silencio y también de los estruendos que anuncian los desprendimientos, siendo testigos del fenómeno, dejando un recuerdo imborrable.",
-      ],
-      duration: " 1 hora",
-      include: [" Traslados incluidos"],
+      id:"3",
+    title: "Full Day Glaciares Gourmet Classic con traslados",
+    category: "Navegaciones",
+    dificulty: "Fácil",
+    destination: "El Calafate",
 
-      meals:" No incluye",
-      tikets: "Incluye",
-      season: "todo el año",
-      transfer: "Traslados incluídos",
+    gallery: ["/img/glaciarGourmet.png", "/img/glaciarGourmet2.jpg"],
+    description: ["Glaciares Gourmet es una experiencia full day a bordo del crucero María turquesa que recorre algunos lugares de este paraje patagónico, navegando con el más alto confort y con una gastronomía gourmet diseñada especialmente para una experiencia memorable hacia el brazo norte del lago argentino. Visita a Bahía escuadra y muralla de condoreras, glaciar seco, glaciar heim, glaciar peineta, glaciar spegazzini. Desembarque en puesto las vacas: caminata. Visita al canal upsala. Vista panorámica del glaciar Upsala y Bertacchi. Luego se retornará al puerto la soledad desde donde retornarán en vehículo a el calafate unos 50 km.",
+  ],
+    duration: " 10 horas - Navegación + traslados",
+    include: [
+    "Guía profesional y almuerzo.",
+    "Incluye traslado desde el alojamiento ida y vuelta. No incluye entrada al parque nacional."
+    ]     ,
+    meals:"Incluye almuerzo",
+    tikets: "Incluye",
+    season: "todo el año",
+    transfer: "Traslados incluídos",
+    
+    
   
-    },
+
+  },
+    
     {
         id:"4",
       title: "Moreno Spirit (Cara Norte)",
@@ -96,7 +103,7 @@
       gallery: ["/img/navegacion3.jpg", "/img/navegacion3.jpg"],
       description:[ "Navegación sobre el brazo norte del lago argentino. Una vez a bordo navegaremos a través del brazo norte del lago argentino hasta llegar al canal upsala, allí, si la ubicación de los témpanos lo permite, nos aproximamos a la pared del glaciar. Luego navegaremos el canal spegazzini, donde podremos observar el glaciar seco, hasta llegar al frente del glaciar spegazzini, el más alto del parque nacional.",
      ],
-      duration: "5 horas",
+      duration: " 10 horas - Navegación + traslados",
       include: ["Traslados desde y hacia el hotel.",
       " No incluye ingresos al parque nacional."],
 
@@ -107,29 +114,23 @@
   
     },
     {
-        id:"6",
-      title: "Full Day Glaciares Gourmet Classic con traslados",
-      category: "Navegaciones",
-      dificulty: "Fácil",
-      destination: "El Calafate",
-
-      gallery: ["/img/glaciarGourmet.png", "/img/glaciarGourmet2.jpg"],
-      description: ["Glaciares Gourmet es una experiencia full day a bordo del crucero María turquesa que recorre algunos lugares de este paraje patagónico, navegando con el más alto confort y con una gastronomía gourmet diseñada especialmente para una experiencia memorable hacia el brazo norte del lago argentino. Visita a Bahía escuadra y muralla de condoreras, glaciar seco, glaciar heim, glaciar peineta, glaciar spegazzini. Desembarque en puesto las vacas: caminata. Visita al canal upsala. Vista panorámica del glaciar Upsala y Bertacchi. Luego se retornará al puerto la soledad desde donde retornarán en vehículo a el calafate unos 50 km.",
+      id:"6",
+    title: "Safari náutico",
+    category: "Navegaciones",
+    dificulty: "Fácil",
+    destination: "El Calafate",
+    gallery: ["/img/navegacion2.jpg", "/img/navegacion2.jpg"],
+    description: [" Navegación Moreno Frente Al Glaciar Perito Moreno.", " En segundos de iniciado nuestro recorrido se podrá observar la pared norte del glaciar desde una perspectiva totalmente diferente de lo que se puede ver desde las pasarelas. Nos aproximamos y navegaremos el frente completo dentro de los límites permitidos para garantizar la seguridad de la navegación y observaremos el paisaje, disfrutaremos su silencio y también de los estruendos que anuncian los desprendimientos, siendo testigos del fenómeno, dejando un recuerdo imborrable.",
     ],
-      duration: " 10 horas - Navegación + traslados",
-      include: [
-      "Guía profesional y almuerzo.",
-      "Incluye traslado desde el alojamiento ida y vuelta. No incluye entrada al parque nacional."
-      ]     ,
-      meals:"Incluye almuerzo",
-      tikets: "Incluye",
-      season: "todo el año",
-      transfer: "Traslados incluídos",
-      
-      
-    
-  
-    },
+    duration: " 1 hora",
+    include: [" Traslados incluidos"],
+
+    meals:" No incluye",
+    tikets: "Incluye",
+    season: "todo el año",
+    transfer: "Traslados incluídos",
+
+  },
 
  /*     {
       id:"7",
@@ -403,6 +404,33 @@ transfer: "Traslados no incluídos",
 
 {
   id:"18",
+title: "Trekking Laguna Esmeralda",
+category: "Aventura",
+dificulty: "Media",
+
+destination: "Ushuaia",
+
+gallery: ["/img/esmeralda.jpg","/img/esmeralda2.jpg"],
+description:["Es una excursión que los pasamos a buscar por el hotel y nos dirigimos al este de la ciudad de Ushuaia, seguiremos por la Ruta Nacional Nº 3 unos 20 kilómetros  y una vez allí en el valle comenzaremos la  caminata, atravesando  el bosque de Tierra Mayor o (Valle Lasifashaj) por un sendero muy claro, que atraviesa varios turbales y zonas de castoreras. Después de un poco más de bosque, seguimos nuestra caminata bordeando el río Esmeralda hasta llegar a una zona cerca del  límite de vegetación a la majestuosa y bellísima laguna de origen glaciar, con aguas color esmeralda debido a los sedimentos que provienen del Glaciar Ojo del Albino. Tendrán tiempo  de disfrutar la vista de la laguna, podremos emprender el regreso. Finalizando el recorrido llegaremos a un refugio invernal donde cargaremos energías con un almuerzo bien completo. Luego del almuerzo  regresamos hasta la Ruta Nacional donde estará el Vehículo esperando para volverlos a traer a la ciudad.",
+],
+duration: " Desde 6 horas",
+include: [
+" Guía profesional bilingüe.",
+
+]     ,
+meals:"Incluye ",
+tikets: "Incluye",
+season: "Todo el año",
+transfer: "Traslados incluídos",
+
+
+
+},
+
+
+
+{
+  id:"19",
 title: "Traslado Aeropuerto Ushuaia",
 category: "Traslados",
 dificulty: "Fácil",
@@ -421,14 +449,14 @@ include: [
 
 meals:"No incluye ",
 tikets: "No incluye",
-season: "todo el año",
+season: "Todo el año",
 transfer: "Traslados incluídos",
 
 
 },
 
 {
-  id:"19",
+  id:"20",
 title: "Full day Torres del Paine",
 category: "Aventura",
 dificulty: "Fácil",
@@ -454,7 +482,7 @@ transfer: "Traslados incluídos",
 },
 
 {
-  id:"20",
+  id:"21",
 title: "Full Day Excursión en El Chaltén",
 category: "Trekking",
 dificulty: "Fácil",

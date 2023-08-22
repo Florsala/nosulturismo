@@ -21,14 +21,10 @@ const NavBar = () => {
           <Link to={"/"}>
             <img src={logo} alt="logo" />
           </Link>
-
-          
         </div>
-       
 
         <div>
-
- <p
+          <p
             style={{
               fontSize: "0.7rem",
               color: "#d7e2e7",
@@ -37,13 +33,9 @@ const NavBar = () => {
               paddingTop: "0.2rem",
             }}
           >
-          
             No Sul Turismo EVT - Leg 17174 - Disp: 265/18 Mintur
-          </p> 
-
-         
-
-</div>
+          </p>
+        </div>
 
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
@@ -97,7 +89,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-             <IconsMenu /> 
+            <IconsMenu />
           </li>
         </ul>
 
@@ -109,12 +101,8 @@ const NavBar = () => {
           )}
         </div>
       </div>
-
-     
     </>
   );
 };
-
-
 
 export default NavBar;

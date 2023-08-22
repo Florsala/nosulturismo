@@ -163,7 +163,7 @@ const Footer = () => {
         </ul>
 
         <p className="text-xs-center">
-          &copy;{new Date().getFullYear()} | All rights reserved - No Sul
+          &copy;{new Date().getFullYear()} | Todos los derechos reservados - No Sul
           Turismo EVT - Leg 17174
         </p>
       </div>
